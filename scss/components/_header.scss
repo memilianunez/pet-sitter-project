@@ -1,0 +1,121 @@
+
+.contenedor-header {
+    background-color: $color-blanco;
+    padding: 1em;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedor-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.logo-pet-sitters {
+    height: 50px;
+    padding: 5px;
+}
+
+
+.icono-menu-mobile {
+    width: 40px;
+    font-size: 1rem;
+    padding: 1em;
+}
+
+
+.contenedor-inicio-reg {
+    display: none;
+}
+
+
+//--TABLET--//
+
+@media (min-width: 658px) and (max-width: 1023px) {
+
+    /* ----header---- */
+    .header {
+        background-color: #f2f2f2;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contenedor-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .icono-menu-mobile {
+        display: none;
+    }
+
+    .contenedor-inicio-reg {
+        background-color: rgb(228, 228, 228);
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 1rem;
+        padding-right: 4em;
+        gap: 1em;
+        grid-row: 1/2;
+        grid-column: 2/3;
+    }
+
+    .btn-sesion {
+        background-color: rgb(215, 215, 215);
+        border: 1px solid black;
+        border-radius: 20px;
+        padding: 6px 10px;
+        font-weight: 600;
+    }
+
+}
+
+
+
+//--DESKTOP--//
+@media (min-width: 1024px) {
+
+    /* ----header---- */
+    .header {
+        background-color: #e4e4e4;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    
+    .icono-menu-mobile {
+        width: 50px;
+        display: none;
+    }
+
+    .btn-sesion {
+        background-color: rgb(215, 215, 215);
+        font-weight: 600;
+        min-width: 130px;
+        flex-wrap: nowrap;
+        border: 1px solid black;
+        border-radius: 20px;
+        padding: 6px 10px;
+    }
+
+    .contenedor-inicio-reg {
+        display: flex;
+        gap: 20px;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .registrarme {
+        font-size: 1rem;
+        padding-right: 4em;
+    }
+
+}

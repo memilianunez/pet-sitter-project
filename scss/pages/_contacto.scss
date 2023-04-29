@@ -1,0 +1,108 @@
+.banner-ppal-contacto {
+    background-color: #515151;
+    background-image: url(../img/gatito-cama-pet-sitters.jpg);
+
+    resize: both;
+    overflow: auto;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+
+    min-width: none;
+    min-height: 600px;
+}
+
+.contacto-formulario {
+    padding: 70px;
+}
+
+.titulo-dejanos-mensaje {
+    color: #79CACC;
+    text-decoration: underline;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.nombre-apellido {
+    padding: 20px;
+}
+
+.genero {
+    padding: 20px;
+}
+
+.telefono {
+    padding: 20px
+}
+
+.email {
+    padding: 20px;
+}
+
+.cantidad-mascotas {
+    padding: 20px;
+}
+
+.nombre-mascota {
+    padding: 20px;
+}
+
+.tipo-animal {
+    padding: 20px;
+}
+
+.asunto {
+    padding: 20px;
+}
+
+.mensaje {
+    padding: 20px;
+}
+
+.suscribirse {
+    padding: 20px;
+}
+
+.botones-contacto {
+    padding: 20px;
+}
+
+form {
+    color: #515151;
+    font-family: 'Poppins', sans-serif;
+}
+
+input {
+    color: inherit;
+    font-family: inherit;
+}
+
+textarea {
+    color: #515151;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.bloque-imagen-contacto {
+    background-image: url("../img/perro-gato-sentados-pet-sitters.jpg");
+    background-position: center;
+    background-size: cover;
+
+    background-color: #767676;
+
+    height: 600px;
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    resize: both;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+

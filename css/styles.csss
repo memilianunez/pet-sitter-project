@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  color: #515151;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  padding: 0px 20px;
+  text-align: center;
+  display: none;
+}
+
+h2 {
+  color: #515151;
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+h3 {
+  color: #515151;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+
+h4 {
+  color: #D2A2EE;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+p {
+  color: #515151;
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+}
+
+nav ul {
+  color: #515151;
+  font-family: "Poppins", sans-serif;
+  display: none;
+}
+nav ul li {
+  font-size: 1rem;
+  padding: 0.2em;
+  text-align: center;
+  list-style: none;
+}
+nav ul li a {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  color: #515151;
+}
+
+/* ----Configuracion Botones ---- */
+.block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2em;
+  padding: 1em;
+}
+.block__btn {
+  background-color: #9154b5;
+  color: #D2A2EE;
+  border: solid 0.2em #D2A2EE;
+  border-radius: 2em;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 0.5em 1.5em;
+}
+.block__btn:hover {
+  background-color: #90e0ef;
+  color: #00b4d8;
+  border: solid 0.2em #00b4d8;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* ---Encabezado---- */
+.contenedor-header {
+  background-color: #ffffff;
+  padding: 1em;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contenedor-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo-pet-sitters {
+  height: 50px;
+  padding: 5px;
+}
+
+.icono-menu-mobile {
+  width: 40px;
+  font-size: 1rem;
+  padding: 1em;
+}
+
+.contenedor-inicio-reg {
+  display: none;
+}
+
+/* ----Index---- */
+.portada-index {
+  height: 50vh;
+  background-color: #ffffff;
+  background-image: url(../img/pet-sitter-mimo.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* ----Pasos---- */
+.titulo-ppal {
+  color: #515151;
+  text-align: center;
+  font-size: 1.7rem;
+  padding: 1em;
+}
+
+.pasos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+  padding: 0em 1.5em;
+  gap: 1em;
+}
+.pasos__tarjeta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(210, 162, 238, 0.4078431373);
+  border: 0.2em solid #64037c;
+  font-size: 1rem;
+  padding: 1em;
+  border-radius: 2em;
+}
+.pasos__icono {
+  font-size: 2.2rem;
+  padding: 0.1em;
+}
+.pasos__titulo {
+  font-size: 1.3em;
+}
+.pasos__p {
+  font-size: 1rem;
+  padding: 2em;
+  text-align: center;
+}
+
+/*# sourceMappingURL=styles.csss.map */
