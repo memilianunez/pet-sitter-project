@@ -1,0 +1,76 @@
+
+$fuente-principal: 'Poppins', sans-serif;
+
+$color-primario: #515151;
+$color-secundario: #D2A2EE;
+$color-blanco: #ffffff;
+$color-negro: #000000;
+
+
+$color-btn-fondo: #9154b5;
+$color-btn-text: #D2A2EE;
+$color-btn-border: #D2A2EE;
+
+
+$color-btn-fondo-hover: #90e0ef;
+$color-btn-text-hover: #00b4d8;
+$color-btn-border-hover: #00b4d8;
+
+$color-fondo-tarjeta: #d2a2ee68;
+$color-borde-tarjeta: #64037c;
+
+$MQ-mobile: 320px;
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+} 
+
+
+
+body {
+    font-family: $fuente-principal;
+}
+
+
+h1 {
+    color: $color-primario;
+    font-family: $fuente-principal;
+    font-size: 10px;
+    padding: 0px 20px;
+    text-align: center;
+    display: none;
+}
+
+
+h2 {
+    color: $color-primario;
+    font-family: $fuente-principal;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+h3 {
+    color: $color-primario;
+    font-family: $fuente-principal;
+    font-size: 20px;
+}
+
+h4 {
+    color: $color-secundario;
+    font-family: $fuente-principal;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+p {
+    color: $color-primario;
+    font-family: $fuente-principal;
+    font-weight: normal;
+}
+
