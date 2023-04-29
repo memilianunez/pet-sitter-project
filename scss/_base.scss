@@ -1,4 +1,3 @@
-
 $fuente-principal: 'Poppins', sans-serif;
 
 $color-primario: #515151;
@@ -29,7 +28,7 @@ $MQ-mobile: 320px;
     margin: 0;
     padding: 0;
     box-sizing: 0;
-} 
+}
 
 
 
@@ -76,4 +75,23 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@mixin flex-box ($justify: center, $align: center) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+
+@mixin mobile {
+    @media (min-width: 658px) and (max-width: 1023px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: 1024px) {
+        @content;
+    }
 }
