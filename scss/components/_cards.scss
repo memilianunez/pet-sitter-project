@@ -1,4 +1,4 @@
-/* ----Pasos---- */
+//---Pasos----//
 .titulo-ppal {
     color: $color-primario;
     text-align: center;
@@ -44,3 +44,38 @@
 
 }
 
+
+//--TABLET--//
+@media (min-width: 658px) and (max-width: 1023px) {
+
+    .container-steps {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        text-align: center;
+    }
+
+}
+
+
+//--DESKTOP--//
+@media (min-width: 1024px) {
+
+    .titulo-ppal {
+        font-size: 2rem;
+    }
+
+    .container-steps {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+
+        font-size: 1rem;
+        padding-top: 0.5em;
+        padding-bottom: 2em;
+        gap: 1.5em;
+    }
+
+
+}

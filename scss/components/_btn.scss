@@ -24,3 +24,111 @@
         font-weight: 600;
     }
 }
+
+
+//---Seccion Tu Tranquilidad - Index---//
+.block-btn-tu-tranquilidad {
+    font-size: 1rem;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+}
+
+
+//----Seccion Nosotros - Equipo---//
+.btn-equipo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.btn-conocer-mas-nosotros {
+    background-color: #9154b5;
+    color: #d8a4f7;
+    border: solid #9154b5;
+    border-radius: 20px;
+
+    font-weight: 500;
+    font-size: 19px;
+    margin: 50px;
+
+    width: 200px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-conocer-mas-nosotros:hover {
+    background-color: #3b9193;
+    color: white;
+    border: solid white;
+}
+
+
+
+
+//--DESKTOP--//
+@media (min-width: 1024px) {
+
+    .block {
+        font-size: 1rem;
+        padding: 1em;
+    }
+
+
+    .block-btn-tu-tranquilidad {
+        display: flex;
+        flex-direction: row;
+        font-size: 1rem;
+        padding: 2em;
+    }
+
+    .btn-equipo{
+        display: flex;
+        
+            }
+
+}
+
+
+
+//---SERVICIOS--//
+
+
+.btn-comunidad-servicios {
+    background-color: #ffffff;
+    font-weight: 600;
+    color: #515151;
+    padding: 20px 40px;
+    border: solid rgba(0, 0, 0, 0.247);
+    border-radius: 10px;
+}
+
+
+
+//---PREGUNTAS FRECUENTES --// 
+
+.btn-comunidad-faqs {
+    background-color: #ffffff;
+    height: 40px;
+    font-weight: 600;
+    color: #515151;
+    padding: 20px 40px;
+    border: solid rgba(0, 0, 0, 0.247);
+    border-radius: 10px;
+}
+
+.btn-comunidad-faqs:hover {
+    background-color: #515151ea;
+    color: #ffffff;
+}
+
