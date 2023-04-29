@@ -1,0 +1,36 @@
+
+.contenedor-header {
+    background-color: $color-blanco;
+    padding: 1em;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedor-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.logo-pet-sitters {
+    height: 50px;
+    padding: 5px;
+}
+
+
+.icono-menu-mobile {
+    width: 40px;
+    font-size: 1rem;
+    padding: 1em;
+}
+
+
+.contenedor-inicio-reg {
+    display: none;
+}
+

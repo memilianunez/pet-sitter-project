@@ -1,0 +1,26 @@
+
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2em;
+    padding: 1em;
+
+    &__btn {
+        background-color: $color-btn-fondo;
+        color: $color-btn-text;
+        border: solid 0.2em $color-btn-border;
+        border-radius: 2em;
+        font-size: 1rem;
+        font-weight: 300;
+        padding: 0.5em 1.5em;
+    }
+
+    &__btn:hover {
+        background-color: $color-btn-fondo-hover;
+        color: $color-btn-text-hover;
+        border: solid 0.2em $color-btn-border-hover;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+}
