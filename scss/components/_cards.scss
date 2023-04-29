@@ -4,6 +4,10 @@
     text-align: center;
     font-size: 1.7rem;
     padding: 1em;
+
+    @include desktop {
+        font-size: 2rem;
+    }
 }
 
 .pasos {
@@ -14,58 +18,15 @@
     padding: 0em 1.5em;
     gap: 1em;
 
-
-    &__tarjeta {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: $color-fondo-tarjeta;
-        border: 0.2em solid $color-borde-tarjeta;
-        font-size: 1rem;
-        padding: 1em;
-        border-radius: 2em;
-    }
-
-    &__icono {
-        font-size: 2.2rem;
-        padding: 0.1em;
-    }
-
-    &__titulo{
-    font-size: 1.3em;
-}
-
-&__p{
-    font-size: 1rem;
-    padding: 2em;
-    text-align: center;
-}
-
-}
-
-
-//--TABLET--//
-@media (min-width: 658px) and (max-width: 1023px) {
-
-    .pasos {
+    @include tablet {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         text-align: center;
     }
 
-}
 
-
-//--DESKTOP--//
-@media (min-width: 1024px) {
-
-    .titulo-ppal {
-        font-size: 2rem;
-    }
-
-    .pasos{
+    @include desktop {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -75,6 +36,46 @@
         padding-top: 0.5em;
         padding-bottom: 2em;
         gap: 1.5em;
+    }
+
+
+    &__tarjeta {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-fondo-tarjeta;
+        border: 0.2em solid $color-borde-tarjeta;
+        font-size: 1rem;
+        padding: 0.5em;
+        border-radius: 2em;
+
+        @include tablet {
+            height: 330px;
+        }
+
+        @include desktop {
+            height: 440px;
+        }
+}
+
+&__tarjeta:hover{
+    background-color: $color-fondo-tarjeta-hover;
+}
+
+    &__icono {
+        font-size: 2.2rem;
+        padding: 0.3em;
+    }
+
+    &__titulo {
+        font-size: 1.3em;
+    }
+
+    &__p {
+        font-size: 1rem;
+        padding: 2em;
+        text-align: center;
     }
 
 }

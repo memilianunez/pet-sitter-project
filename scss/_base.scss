@@ -6,9 +6,9 @@ $color-blanco: #ffffff;
 $color-negro: #000000;
 
 
-$color-btn-fondo: #9154b5;
-$color-btn-text: #D2A2EE;
-$color-btn-border: #D2A2EE;
+$color-btn-fondo: #c982f5cc;
+$color-btn-text: #8003c8;
+$color-btn-border: #8003c8;
 
 
 $color-btn-fondo-hover: #90e0ef;
@@ -19,6 +19,7 @@ $color-header: #e4e4e4;
 
 $color-fondo-tarjeta: #d2a2ee68;
 $color-borde-tarjeta: #64037c;
+$color-fondo-tarjeta-hover:#c982f5cc;
 
 $MQ-mobile: 320px;
 
@@ -91,6 +92,7 @@ p {
         @content;
     }
 }
+
 
 @mixin desktop() {
     @media (min-width: 1024px) {

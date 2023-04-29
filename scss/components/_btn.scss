@@ -1,4 +1,3 @@
-
 .block {
     display: flex;
     flex-direction: column;
@@ -10,10 +9,11 @@
         background-color: $color-btn-fondo;
         color: $color-btn-text;
         border: solid 0.2em $color-btn-border;
+        font-weight: 600;
         border-radius: 2em;
         font-size: 1rem;
-        font-weight: 300;
         padding: 0.5em 1.5em;
+        text-decoration: none;
     }
 
     &__btn:hover {
@@ -92,10 +92,10 @@
         padding: 2em;
     }
 
-    .btn-equipo{
+    .btn-equipo {
         display: flex;
-        
-            }
+
+    }
 
 }
 
@@ -131,4 +131,3 @@
     background-color: #515151ea;
     color: #ffffff;
 }
-

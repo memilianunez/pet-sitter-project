@@ -51,13 +51,14 @@ p {
   padding: 1em;
 }
 .block__btn {
-  background-color: #9154b5;
-  color: #D2A2EE;
-  border: solid 0.2em #D2A2EE;
+  background-color: rgba(201, 130, 245, 0.8);
+  color: #8003c8;
+  border: solid 0.2em #8003c8;
+  font-weight: 600;
   border-radius: 2em;
   font-size: 1rem;
-  font-weight: 300;
   padding: 0.5em 1.5em;
+  text-decoration: none;
 }
 .block__btn:hover {
   background-color: #90e0ef;
@@ -153,6 +154,11 @@ p {
   font-size: 1.7rem;
   padding: 1em;
 }
+@media (min-width: 1024px) {
+  .titulo-ppal {
+    font-size: 2rem;
+  }
+}
 
 .pasos {
   display: flex;
@@ -162,30 +168,6 @@ p {
   padding: 0em 1.5em;
   gap: 1em;
 }
-.pasos__tarjeta {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(210, 162, 238, 0.4078431373);
-  border: 0.2em solid #64037c;
-  font-size: 1rem;
-  padding: 1em;
-  border-radius: 2em;
-}
-.pasos__icono {
-  font-size: 2.2rem;
-  padding: 0.1em;
-}
-.pasos__titulo {
-  font-size: 1.3em;
-}
-.pasos__p {
-  font-size: 1rem;
-  padding: 2em;
-  text-align: center;
-}
-
 @media (min-width: 658px) and (max-width: 1023px) {
   .pasos {
     display: grid;
@@ -195,9 +177,6 @@ p {
   }
 }
 @media (min-width: 1024px) {
-  .titulo-ppal {
-    font-size: 2rem;
-  }
   .pasos {
     display: flex;
     flex-direction: row;
@@ -209,6 +188,43 @@ p {
     gap: 1.5em;
   }
 }
+.pasos__tarjeta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(210, 162, 238, 0.4078431373);
+  border: 0.2em solid #64037c;
+  font-size: 1rem;
+  padding: 0.5em;
+  border-radius: 2em;
+}
+@media (min-width: 658px) and (max-width: 1023px) {
+  .pasos__tarjeta {
+    height: 330px;
+  }
+}
+@media (min-width: 1024px) {
+  .pasos__tarjeta {
+    height: 440px;
+  }
+}
+.pasos__tarjeta:hover {
+  background-color: rgba(201, 130, 245, 0.8);
+}
+.pasos__icono {
+  font-size: 2.2rem;
+  padding: 0.3em;
+}
+.pasos__titulo {
+  font-size: 1.3em;
+}
+.pasos__p {
+  font-size: 1rem;
+  padding: 2em;
+  text-align: center;
+}
+
 .footer {
   background-color: rgba(242, 241, 241, 0.6039215686);
   color: #515151;
@@ -466,7 +482,7 @@ nav ul li a {
 }
 
 .portada-index {
-  height: 60vh;
+  height: 50vh;
   background-color: #ffffff;
   background-image: url(../img/pet-sitter-mimo.jpg);
   background-size: cover;
