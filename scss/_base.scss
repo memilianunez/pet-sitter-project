@@ -84,13 +84,13 @@ p {
 }
 
 
-@mixin mobile {
+@mixin tablet () {
     @media (min-width: 658px) and (max-width: 1023px) {
         @content;
     }
 }
 
-@mixin desktop {
+@mixin desktop() {
     @media (min-width: 1024px) {
         @content;
     }
