@@ -39,15 +39,13 @@
 
 
 .banner-unite-comunidad {
+    @include flex-center;
     background-color: #515151;
     font-size: 1rem;
     height: 25em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-image: url(../img/pet-sitters-comunidad.jpg);
+flex-direction: column;
+
+background-image: url(../img/pet-sitters-comunidad.jpg);
     background-size: cover;
     background-position: bottom;
     background-attachment: fixed;

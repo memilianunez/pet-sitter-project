@@ -48,7 +48,7 @@
 //--TABLET--//
 @media (min-width: 658px) and (max-width: 1023px) {
 
-    .container-steps {
+    .pasos {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
@@ -65,7 +65,7 @@
         font-size: 2rem;
     }
 
-    .container-steps {
+    .pasos{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
