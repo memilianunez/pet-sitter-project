@@ -2,21 +2,22 @@ $fuente-principal: 'Poppins', sans-serif;
 
 $color-primario: #515151;
 $color-secundario: #D2A2EE;
-$color-terciario:#79CACC;
+$color-terciario: #90e0ef;
 $color-blanco: #ffffff;
 $color-negro: #000000;
 
 $color-bloques-secciones:#e4e4e465;
 
 
-$color-fondo-btn: #c982f5cc;
+
 $color-btn-text: #8003c8;
 $color-btn-border: #8003c8;
+$color-fondo-btn: #c982f5cc;
 
 
-$color-fondo-btn-hover: #90e0ef;
 $color-btn-text-hover: #00b4d8;
 $color-btn-border-hover: #00b4d8;
+$color-fondo-btn-hover: #90e0ef;
 
 $color-header: #e4e4e4;
 
@@ -57,7 +58,7 @@ h1 {
 }
 
 h2 {
-    color: $color-primario;
+    color: $color-terciario;
     font-family: $fuente-principal;
     font-size: 22px;
     font-weight: 800;

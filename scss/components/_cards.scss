@@ -40,10 +40,8 @@
 
 
     &__tarjeta {
-        display: flex;
+        @include flex-center;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         background-color: $color-fondo-tarjeta;
         border: 0.2em solid $color-borde-tarjeta;
         font-size: 1rem;
@@ -57,11 +55,11 @@
         @include desktop {
             height: 440px;
         }
-}
+    }
 
-&__tarjeta:hover{
-    background-color: $color-fondo-tarjeta-hover;
-}
+    &__tarjeta:hover {
+        background-color: $color-fondo-tarjeta-hover;
+    }
 
     &__icono {
         font-size: 2.2rem;
@@ -79,3 +77,4 @@
     }
 
 }
+

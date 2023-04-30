@@ -1,107 +1,25 @@
-.banner-ppal-servicios {
-    background-color: #515151;
-    background-image: url(../img/banner-servicios-pet-sitters.jpg);
+.servicios__banner {
+    background-color: $color-primario;
+    background-image: url(../img/como-perros-y-gatos.jpg);
 
     resize: both;
     overflow: auto;
 
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: center;
     background-size: cover;
     background-attachment: fixed;
 
-    min-width: none;
-    min-height: 600px;
+    font-size: 1rem;
+    height: 30em;
 }
 
-.titulo-servicios {
-    display: flex;
+.servicios__titulo {
+    @include flex-center;
     justify-content: center;
     align-items: center;
-    padding: 50px;
-    font-size: 80px;
-}
-
-.servicios {
-    color: #875eaa;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-
-}
-
-.hospedaje-visitas {
-    background-color: #d2a2ee68;
-    height: 350px;
-    width: 200px;
-    overflow: scroll;
-
-    padding: 15px 10px 0px;
-    margin: 10px;
-    border: solid #64037c;
-    border-radius: 25px;
-
-}
-
-.juegos-mas {
-    background-color: #d2a2ee68;
-    height: 350px;
-    width: 200px;
-    overflow: scroll;
-
-    padding: 15px 10px 0px;
-    margin: 10px;
-    border: solid #64037c;
-    border-radius: 25px;
-}
-
-.material-audiovisual {
-    background-color: #d2a2ee68;
-    height: 350px;
-    width: 200px;
-    overflow: scroll;
-
-    padding: 15px 10px 0px;
-    margin: 10px;
-    border: solid #64037c;
-    border-radius: 25px;
-}
-
-.control-medicacion {
-    background-color: #d2a2ee68;
-    height: 350px;
-    width: 200px;
-    overflow: scroll;
-
-    padding: 15px 10px 0px;
-    margin: 10px;
-    border: solid #64037c;
-    border-radius: 25px;
-
-}
-
-.limpieza {
-    background-color: #d2a2ee68;
-    height: 350px;
-    width: 200px;
-    overflow: scroll;
-
-    padding: 15px 10px 0px;
-    margin: 10px;
-    border: solid #64037c;
-    border-radius: 25px;
-}
-
-.riego-plantas {
-    background-color: #d2a2ee68;
-    height: 350px;
-    width: 200px;
-    overflow: scroll;
-
-    padding: 15px 10px 0px;
-    margin: 10px;
-    border: solid #64037c;
-    border-radius: 25px;
+    font-size: 1.8rem;
+    padding: 0.5em;
 }
 
 .bloque-imagen-servicios {
@@ -126,22 +44,5 @@
 
     margin: 80px 0px 10px;
 }
-
-
-
-.servicios-uno{
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-}
-
-.servicios-dos{
-    display: flex;
-    justify-content: space-around;
-    width:100%;
-}
-
-
-
 
 
