@@ -52,14 +52,14 @@ a {
   color: #515151;
 }
 
-.block {
+.block, .equipo__btn {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 2em;
-  padding: 1em;
+  padding: 2em;
 }
-.block__btn, .btn-unirme, .tu-tranquilidad__btn {
+.block__btn, .btn-conocer-mas-nosotros, .btn-unirme, .tu-tranquilidad__btn {
   background-color: rgba(201, 130, 245, 0.8);
   color: #8003c8;
   border: solid 0.2em #8003c8;
@@ -69,7 +69,7 @@ a {
   padding: 0.5em 1.5em;
   text-decoration: none;
 }
-.block__btn:hover, .btn-unirme:hover, .tu-tranquilidad__btn:hover {
+.block__btn:hover, .btn-conocer-mas-nosotros:hover, .btn-unirme:hover, .tu-tranquilidad__btn:hover {
   background-color: #90e0ef;
   color: #00b4d8;
   border: solid 0.2em #00b4d8;
@@ -85,39 +85,8 @@ a {
   border: solid 0.2em #00b4d8;
 }
 
-.btn-equipo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 1rem;
-}
-
-.btn-conocer-mas-nosotros {
-  background-color: #9154b5;
-  color: #d8a4f7;
-  border: solid #9154b5;
-  border-radius: 20px;
-  font-weight: 500;
-  font-size: 19px;
-  margin: 50px;
-  width: 200px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.btn-conocer-mas-nosotros:hover {
-  background-color: #3b9193;
-  color: white;
-  border: solid white;
-}
-
 @media (min-width: 1024px) {
-  .block {
+  .block, .equipo__btn {
     font-size: 1rem;
     padding: 1em;
   }
@@ -329,7 +298,6 @@ a {
   .footer__redes {
     grid-column: 1/4;
     grid-row: 2/3;
-    background-color: #f0eeee;
     width: 100vw;
   }
 }
@@ -342,7 +310,7 @@ a {
 }
 
 .contenedor-header {
-  background-color: #e4e4e4;
+  background-color: #ffffff;
   padding: 1em;
   font-size: 1rem;
   display: flex;
@@ -371,7 +339,7 @@ a {
 
 .contenedor-inicio-reg {
   display: none;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
 }
 
 @media (min-width: 658px) and (max-width: 1023px) {
@@ -390,7 +358,7 @@ a {
     display: none;
   }
   .contenedor-inicio-reg {
-    background-color: #e4e4e4;
+    background-color: #ffffff;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -429,7 +397,7 @@ a {
     padding: 6px 10px;
   }
   .contenedor-inicio-reg {
-    background-color: #e4e4e4;
+    background-color: #ffffff;
     display: flex;
     gap: 20px;
     justify-content: flex-end;
@@ -473,6 +441,7 @@ nav ul li a {
 
 @media (min-width: 658px) and (max-width: 1023px) {
   .nav-list {
+    background-color: #f0eeee;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -483,6 +452,7 @@ nav ul li a {
 }
 @media (min-width: 1024px) {
   .nav-list {
+    background-color: #f0eeee;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -637,38 +607,90 @@ nav ul li a {
   text-align: center;
 }
 
-.portada-nosotros {
-  background-color: #e8e8e8;
+.nosotros {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  background-color: rgba(228, 228, 228, 0.3960784314);
+  font-size: 1rem;
 }
-
-.img-portada-nosotros {
+@media (min-width: 1024px) {
+  .nosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    font-size: 1rem;
+    padding: 2em 0em 2em 2em;
+  }
+}
+.nosotros__portada {
   background-image: url(../img/pet-sitters-gato-en-cama.jpg);
   background-size: cover;
   background-attachment: fixed;
   font-size: 1rem;
   height: 30em;
 }
+@media (min-width: 658px) and (max-width: 1023px) {
+  .nosotros__portada {
+    height: 60vh;
+  }
+}
+@media (min-width: 1024px) {
+  .nosotros__portada {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-size: 1rem;
+    height: 20em;
+    font-size: 1rem;
+    height: 25em;
+    background-attachment: scroll;
+  }
+}
 
-.titulo-quienes-somos {
+@media (min-width: 658px) and (max-width: 1023px) {
+  .quienes-somos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1rem;
+    padding: 1em;
+  }
+}
+@media (min-width: 1024px) {
+  .quienes-somos {
+    font-size: 1rem;
+    padding: 2em 0em 3em 0em;
+  }
+}
+.quienes-somos__titulo {
   font-size: 2rem;
   padding: 1em 0em 0em 0em;
   text-align: center;
 }
-
-.texto-quienes-somos {
+@media (min-width: 1024px) {
+  .quienes-somos__titulo {
+    font-size: 2rem;
+    padding: 0em 0em 0em 1em;
+    text-align: left;
+  }
+}
+.quienes-somos__texto {
   font-size: 1rem;
   padding: 1em;
   text-align: center;
 }
-
-.strong-texto-quienes-somos {
-  font-size: 1rem;
+@media (min-width: 1024px) {
+  .quienes-somos__texto {
+    font-size: 1rem;
+    padding: 1em 5em 2em 2em;
+    text-align: left;
+  }
+}
+.quienes-somos__strong {
+  font-size: 1.1em;
 }
 
-.titulo-equipo {
+.nuestro-equipo__titulo {
   color: #79CACC;
   display: flex;
   justify-content: center;
@@ -676,38 +698,61 @@ nav ul li a {
   font-size: 1.8rem;
   padding: 0.5em;
 }
+@media (min-width: 1024px) {
+  .nuestro-equipo__titulo {
+    display: flex;
+    flex-direction: row;
+  }
+}
 
-.nuestro-equipo {
+.equipo {
   font-size: 6rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   font-size: 1rem;
   text-align: center;
 }
-
-.foto-equipo {
+@media (min-width: 1024px) {
+  .equipo {
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+  }
+}
+.equipo__foto {
   font-size: 1rem;
   height: 15em;
   padding: 2em 0em 0em 0em;
 }
-
-.nombres-equipo {
+.equipo__nombres {
+  color: rgba(201, 130, 245, 0.8);
   font-size: 1.5rem;
-  padding: 0em 2em;
+  padding: 1em 0em 0em 0em;
 }
-
-.sobre {
+.equipo__sobre {
   color: #515151;
   font-size: 1rem;
   padding: 0em 2em;
 }
+@media (min-width: 1024px) {
+  .equipo__sobre {
+    font-size: 1rem;
+    padding: 1em 4em 0em 4em;
+  }
+}
+@media (min-width: 1024px) {
+  .equipo__jose {
+    font-size: 1rem;
+    padding: 0em 5em 0em 8.5em;
+  }
+}
 
-.banner-unite-comunidad-nosotros {
+.unite-comunidad-nosotros {
   background-image: url(../img/patitas-perro-cama-pet-sitters.jpg);
   background-color: #515151;
   font-size: 1rem;
-  height: 25em;
+  height: 30em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -717,59 +762,12 @@ nav ul li a {
   background-position: center;
   background-attachment: fixed;
 }
-
-@media (min-width: 658px) and (max-width: 1023px) {
-  .seccion-quienes-somos {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    font-size: 1rem;
-    padding: 1em;
-  }
-  .img-portada-nosotros {
-    height: 60vh;
-  }
-}
 @media (min-width: 1024px) {
-  .portada-nosotros {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    font-size: 1rem;
-    padding: 2em 0em 2em 2em;
-  }
-  .img-portada-nosotros {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    font-size: 1rem;
-    height: 20em;
-    font-size: 1rem;
-    height: 25em;
-    background-attachment: scroll;
-  }
-  .seccion-quienes-somos {
-    font-size: 1rem;
-    padding: 2em 0em 3em 0em;
-  }
-  .titulo-quienes-somos {
-    text-align: left;
-    font-size: 2rem;
-    padding: 0em 0em 0em 1em;
-  }
-  .texto-quienes-somos {
-    text-align: left;
-    font-size: 1rem;
-    padding: 1em 5em 2em 2em;
-  }
-  .nuestro-equipo {
-    display: flex;
-    flex-direction: row;
-  }
-  .sobre {
-    font-size: 1rem;
-    padding: 1em 5em 0em 5em;
+  .unite-comunidad-nosotros {
+    height: 40em;
   }
 }
+
 .banner-ppal-servicios {
   background-color: #515151;
   background-image: url(../img/banner-servicios-pet-sitters.jpg);

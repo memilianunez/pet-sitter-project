@@ -34,6 +34,7 @@ nav {
 
 .nav-list{
     @include tablet {
+        background-color: $color-nav;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -43,6 +44,7 @@ nav {
     }
 
     @include desktop{
+        background-color: $color-nav;
         display: flex;
         flex-direction: row;
         justify-content: center;

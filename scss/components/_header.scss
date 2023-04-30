@@ -1,6 +1,6 @@
 
 .contenedor-header {
-    background-color: $color-header;
+    background-color: $color-blanco;
     padding: 1em;
     font-size: 1rem;
     display: flex;
@@ -32,7 +32,7 @@
 
 .contenedor-inicio-reg {
     display: none;
-    background-color: #f2f2f2;
+    background-color: $color-blanco;
 }
 
 
@@ -58,7 +58,7 @@
     }
 
     .contenedor-inicio-reg {
-        background-color: $color-header;
+        background-color: $color-blanco;
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -108,7 +108,7 @@
     }
 
     .contenedor-inicio-reg {
-        background-color: #e4e4e4;
+        background-color: $color-blanco;
         display: flex;
         gap: 20px;
         justify-content: flex-end;

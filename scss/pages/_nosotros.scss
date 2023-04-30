@@ -1,76 +1,155 @@
-
-.portada-nosotros {
-    background-color: #e8e8e8;
+.nosotros {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-}
-
-.img-portada-nosotros {
-    background-image: url(../img/pet-sitters-gato-en-cama.jpg);
-    background-size: cover;
-    background-attachment: fixed;
+    background-color: $color-bloques-secciones;
     font-size: 1rem;
-    height: 30em;
+
+    @include desktop {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        font-size: 1rem;
+        padding: 2em 0em 2em 2em;
+    }
+
+    &__portada {
+        background-image: url(../img/pet-sitters-gato-en-cama.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        font-size: 1rem;
+        height: 30em;
+
+        @include tablet {
+            height: 60vh;
+        }
+
+        @include desktop {
+            grid-column: 1/2;
+            grid-row: 1/2;
+            font-size: 1rem;
+            height: 20em;
+            font-size: 1rem;
+            height: 25em;
+            background-attachment: scroll;
+        }
+
+    }
 }
 
-.titulo-quienes-somos {
-    font-size: 2rem;
-    padding: 1em 0em 0em 0em;
-    text-align: center;
-}
+.quienes-somos {
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 1rem;
+        padding: 1em;
+    }
 
-.texto-quienes-somos {
-    font-size: 1rem;
-    padding: 1em;
-    text-align: center;
-}
+    @include desktop {
+        font-size: 1rem;
+        padding: 2em 0em 3em 0em;
+    }
 
-.strong-texto-quienes-somos {
-    font-size: 1rem;
-}
+    &__titulo {
+        font-size: 2rem;
+        padding: 1em 0em 0em 0em;
+        text-align: center;
 
-.titulo-equipo {
-    color: #79CACC;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.8rem;
-    padding: 0.5em;
+        @include desktop {
+            font-size: 2rem;
+            padding: 0em 0em 0em 1em;
+            text-align: left;
+        }
+    }
+
+    &__texto {
+        font-size: 1rem;
+        padding: 1em;
+        text-align: center;
+
+        @include desktop {
+            font-size: 1rem;
+            padding: 1em 5em 2em 2em;
+            text-align: left;
+        }
+    }
+
+    &__strong {
+        font-size: 1.1em;
+    }
+
 }
 
 .nuestro-equipo {
+    &__titulo {
+        color: $color-terciario;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.8rem;
+        padding: 0.5em;
+
+        @include desktop {
+            display: flex;
+            flex-direction: row;
+        }
+
+    }
+}
+
+.equipo {
     font-size: 6rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     font-size: 1rem;
     text-align: center;
+
+    @include desktop {
+        display: flex;
+        flex-direction: row;
+        font-size: 1rem;
+
+    }
+
+    &__foto {
+        font-size: 1rem;
+        height: 15em;
+        padding: 2em 0em 0em 0em;
+    }
+
+    &__nombres {
+        color: $color-fondo-btn;
+        font-size: 1.5rem;
+        padding: 1em 0em 0em 0em;
+    }
+
+    &__sobre {
+        color: $color-primario;
+        font-size: 1rem;
+        padding: 0em 2em;
+
+        @include desktop {
+            font-size: 1rem;
+            padding: 1em 4em 0em 4em;
+        }
+    }
+
+    &__jose {
+        @include desktop {
+            font-size: 1rem;
+            padding: 0em 5em 0em 8.5em;
+        }
+    }
+
 }
 
-.foto-equipo {
-    font-size: 1rem;
-    height: 15em;
-    padding: 2em 0em 0em 0em;
-}
-
-.nombres-equipo {
-    font-size: 1.5rem;
-    padding: 0em 2em;
-}
-
-.sobre {
-    color: #515151;
-    font-size: 1rem;
-    padding: 0em 2em;
-}
-
-
-.banner-unite-comunidad-nosotros {
+.unite-comunidad-nosotros {
     background-image: url(../img/patitas-perro-cama-pet-sitters.jpg);
     background-color: #515151;
     font-size: 1rem;
-    height: 25em;
+    height: 30em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -79,77 +158,8 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-}
 
-
-@media (min-width: 658px) and (max-width: 1023px) {
-
-    .seccion-quienes-somos {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        font-size: 1rem;
-        padding: 1em;
+    @include desktop{
+        height: 40em;
     }
-
-    .img-portada-nosotros {
-        height: 60vh;
-    }
-
-}
-
-
-@media (min-width: 1024px) {
-
-.portada-nosotros {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    font-size: 1rem;
-    padding: 2em 0em 2em 2em;
-}
-
-
-.img-portada-nosotros {
-grid-column: 1/2;
-grid-row: 1/2;
-font-size: 1rem;
-height: 20em;
-font-size: 1rem;
-height: 25em;
-background-attachment: scroll;
-}
-
-.seccion-quienes-somos {
-font-size: 1rem;
-padding: 2em 0em 3em 0em;
-}
-
-
-
-.titulo-quienes-somos {
-text-align: left;
-font-size: 2rem;
-padding: 0em 0em 0em 1em;
-}
-
-.texto-quienes-somos {
-text-align: left;
-font-size: 1rem;
-padding: 1em 5em 2em 2em;
-}
-
-
-.nuestro-equipo {
-display: flex;
-flex-direction: row;
-
-}
-
-.sobre {
-font-size: 1rem;
-padding: 1em 5em 0em 5em;
-}
-
-
 }

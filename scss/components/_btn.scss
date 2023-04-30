@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     font-size: 2em;
-    padding: 1em;
+    padding: 2em;
 
     &__btn {
         background-color: $color-fondo-btn;
@@ -41,39 +41,16 @@
 
 
 //----Seccion Nosotros - Equipo---//
-.btn-equipo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 1rem;
+.equipo__btn {
+    @extend .block;
+
 }
 
 .btn-conocer-mas-nosotros {
-    background-color: #9154b5;
-    color: #d8a4f7;
-    border: solid #9154b5;
-    border-radius: 20px;
-
-    font-weight: 500;
-    font-size: 19px;
-    margin: 50px;
-
-    width: 200px;
-    height: 40px;
-
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+@extend .block__btn;
 }
 
-.btn-conocer-mas-nosotros:hover {
-    background-color: #3b9193;
-    color: white;
-    border: solid white;
-}
+
 
 
 
