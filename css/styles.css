@@ -68,12 +68,6 @@ p {
   font-weight: 600;
 }
 
-.tu-tranquilidad__btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .btn-equipo {
   display: flex;
   flex-direction: column;
@@ -539,6 +533,12 @@ nav ul li a {
   font-size: 1.7rem;
   text-align: center;
 }
+@media (min-width: 1024px) {
+  .tu-tranquilidad__titulo {
+    font-size: 2em;
+    text-align: left;
+  }
+}
 .tu-tranquilidad__p {
   text-align: center;
 }
@@ -555,8 +555,14 @@ nav ul li a {
   font-size: 1rem;
   padding: 1em;
 }
+@media (min-width: 1024px) {
+  .tu-tranquilidad__block-btn {
+    display: flex;
+    justify-content: start;
+  }
+}
 
-.banner-unite-comunidad {
+.unite-comunidad {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -570,7 +576,7 @@ nav ul li a {
   background-attachment: fixed;
 }
 @media (min-width: 1024px) {
-  .banner-unite-comunidad {
+  .unite-comunidad {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -582,21 +588,19 @@ nav ul li a {
     background-position: bottom;
   }
 }
-
-.text-banner-unite {
+.unite-comunidad__titulo {
   font-size: 2rem;
   color: #ffffff;
   text-align: center;
 }
 @media (min-width: 1024px) {
-  .text-banner-unite {
+  .unite-comunidad__titulo {
     font-size: 3rem;
     color: #ffffff;
     text-align: center;
   }
 }
-
-.text-input-mail {
+.unite-comunidad__input {
   text-align: center;
 }
 

@@ -6,7 +6,6 @@
     background-position: center;
 }
 
-
 .tu-tranquilidad {
     display: flex;
     flex-direction: column;
@@ -23,77 +22,83 @@
         padding: 2em 0em;
     }
 
-&__img{
-    font-size: 1rem;
-    height: 20em;
-    background-image: url(../img/pet-sitters-gato-rascador-juguete.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-
-    @include desktop {
-        grid-column: 1/2;
-        grid-row: 1/2;
+    &__img {
         font-size: 1rem;
         height: 20em;
-        font-size: 1rem;
-        height: 25em;
-        background-attachment: scroll;
-    }
-}
+        background-image: url(../img/pet-sitters-gato-rascador-juguete.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
 
-&__text{
-    display: flex;
-    flex-direction: column;
-    font-size: 1rem;
-    padding: 1.5em;
-
-    @include desktop {
-        .tu-tranquilidad-text {
-            grid-column: 2/3;
+        @include desktop {
+            grid-column: 1/2;
             grid-row: 1/2;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: left;
-            text-align: left;
             font-size: 1rem;
-            padding: 2em;
-            gap: 0.2em;
+            height: 20em;
+            font-size: 1rem;
+            height: 25em;
+            background-attachment: scroll;
         }
     }
-}
 
+    &__text {
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;
+        padding: 1.5em;
 
-&__titulo{
-    font-size: 1.7rem;
-    text-align: center;
-}
-
-&__p{
-text-align: center;
-
-    @include desktop{
-        text-align: left;
+        @include desktop {
+            .tu-tranquilidad-text {
+                grid-column: 2/3;
+                grid-row: 1/2;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: left;
+                text-align: left;
+                font-size: 1rem;
+                padding: 2em;
+                gap: 0.2em;
+            }
+        }
     }
-}
 
-&__block-btn{
+
+    &__titulo {
+        font-size: 1.7rem;
+        text-align: center;
+
+        @include desktop{
+            font-size: 2em;
+            text-align: left;
+        }
+    }
+
+    &__p {
+        text-align: center;
+
+        @include desktop {
+            text-align: left;
+        }
+    }
+
+    &__block-btn {
         @include flex-center;
         flex-direction: row;
         font-size: 1rem;
         padding: 1em;
+
+        @include desktop{
+            display: flex;
+            justify-content: start;
+        }
     }
 
 
 
 }
 
-
-
-
-
-.banner-unite-comunidad {
+.unite-comunidad {
     @include flex-center;
     text-align: center;
     background-color: $color-blanco;
@@ -113,20 +118,21 @@ text-align: center;
         background-size: cover;
         background-position: bottom;
     }
-}
 
-.text-banner-unite {
-    font-size: 2rem;
-    color: #ffffff;
-    text-align: center;
 
-    @include desktop {
-        font-size: 3rem;
+    &__titulo{
+        font-size: 2rem;
         color: $color-blanco;
         text-align: center;
+    
+        @include desktop {
+            font-size: 3rem;
+            color: $color-blanco;
+            text-align: center;
+        }
     }
-}
 
-.text-input-mail {
-    text-align: center;
+    &__input{
+        text-align: center;
+    }
 }
