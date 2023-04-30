@@ -50,7 +50,7 @@ p {
   font-size: 2em;
   padding: 1em;
 }
-.block__btn {
+.block__btn, .tu-tranquilidad__btn {
   background-color: rgba(201, 130, 245, 0.8);
   color: #8003c8;
   border: solid 0.2em #8003c8;
@@ -60,7 +60,7 @@ p {
   padding: 0.5em 1.5em;
   text-decoration: none;
 }
-.block__btn:hover {
+.block__btn:hover, .tu-tranquilidad__btn:hover {
   background-color: #90e0ef;
   color: #00b4d8;
   border: solid 0.2em #00b4d8;
@@ -68,14 +68,10 @@ p {
   font-weight: 600;
 }
 
-.block-btn-tu-tranquilidad {
-  font-size: 1rem;
-  padding: 1em;
+.tu-tranquilidad__btn {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  font-size: 1rem;
 }
 
 .btn-equipo {
@@ -113,12 +109,6 @@ p {
   .block {
     font-size: 1rem;
     padding: 1em;
-  }
-  .block-btn-tu-tranquilidad {
-    display: flex;
-    flex-direction: row;
-    font-size: 1rem;
-    padding: 2em;
   }
   .btn-equipo {
     display: flex;
@@ -489,7 +479,7 @@ nav ul li a {
   background-position: center;
 }
 
-.tu-tranquilidad-section {
+.tu-tranquilidad {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -497,9 +487,16 @@ nav ul li a {
   gap: 1em;
   background-color: rgba(228, 228, 228, 0.3960784314);
 }
-
-.img-tu-tranquilidad {
-  background-color: #bfbfbf;
+@media (min-width: 1024px) {
+  .tu-tranquilidad {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    font-size: 1rem;
+    padding: 2em 0em;
+  }
+}
+.tu-tranquilidad__img {
   font-size: 1rem;
   height: 20em;
   background-image: url(../img/pet-sitters-gato-rascador-juguete.jpg);
@@ -507,51 +504,8 @@ nav ul li a {
   background-position: center;
   background-attachment: fixed;
 }
-
-.titulo-tu-tranquilidad {
-  font-size: 2rem;
-}
-
-.tu-tranquilidad-text {
-  display: flex;
-  flex-direction: column;
-  font-size: 1rem;
-  padding: 2em;
-}
-
-.banner-unite-comunidad {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #515151;
-  font-size: 1rem;
-  height: 25em;
-  flex-direction: column;
-  background-image: url(../img/pet-sitters-comunidad.jpg);
-  background-size: cover;
-  background-position: bottom;
-  background-attachment: fixed;
-}
-
-.text-banner-unite {
-  font-size: 2rem;
-  color: #ffffff;
-  text-align: center;
-}
-
-.text-input-mail {
-  text-align: center;
-}
-
 @media (min-width: 1024px) {
-  .tu-tranquilidad-section {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    font-size: 1rem;
-    padding: 2em 0em;
-  }
-  .img-tu-tranquilidad {
+  .tu-tranquilidad__img {
     grid-column: 1/2;
     grid-row: 1/2;
     font-size: 1rem;
@@ -560,7 +514,15 @@ nav ul li a {
     height: 25em;
     background-attachment: scroll;
   }
-  .tu-tranquilidad-text {
+}
+.tu-tranquilidad__text {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  padding: 1.5em;
+}
+@media (min-width: 1024px) {
+  .tu-tranquilidad__text .tu-tranquilidad-text {
     grid-column: 2/3;
     grid-row: 1/2;
     display: flex;
@@ -572,25 +534,72 @@ nav ul li a {
     padding: 2em;
     gap: 0.2em;
   }
+}
+.tu-tranquilidad__titulo {
+  font-size: 1.7rem;
+  text-align: center;
+}
+.tu-tranquilidad__p {
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .tu-tranquilidad__p {
+    text-align: left;
+  }
+}
+.tu-tranquilidad__block-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-size: 1rem;
+  padding: 1em;
+}
+
+.banner-unite-comunidad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #ffffff;
+  font-size: 1rem;
+  height: 25em;
+  background-image: url(../img/pet-sitters-comunidad.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+}
+@media (min-width: 1024px) {
   .banner-unite-comunidad {
-    background-color: #515151;
-    font-size: 1rem;
-    height: 45em;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 1rem;
+    height: 45em;
+    flex-direction: column;
     text-align: center;
-    background-image: url(../img/pet-sitters-comunidad.jpg);
     background-size: cover;
     background-position: bottom;
   }
+}
+
+.text-banner-unite {
+  font-size: 2rem;
+  color: #ffffff;
+  text-align: center;
+}
+@media (min-width: 1024px) {
   .text-banner-unite {
     font-size: 3rem;
     color: #ffffff;
     text-align: center;
   }
 }
+
+.text-input-mail {
+  text-align: center;
+}
+
 .portada-nosotros {
   background-color: #e8e8e8;
   display: flex;

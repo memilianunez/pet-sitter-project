@@ -6,75 +6,32 @@
     background-position: center;
 }
 
-.tu-tranquilidad-section {
+
+.tu-tranquilidad {
     display: flex;
     flex-direction: column;
     text-align: center;
     font-size: 1rem;
     gap: 1em;
-    background-color: #e4e4e465;
-}
+    background-color: $color-bloques-secciones;
 
-.img-tu-tranquilidad {
-    background-color: #bfbfbf;
+    @include desktop {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        font-size: 1rem;
+        padding: 2em 0em;
+    }
+
+&__img{
     font-size: 1rem;
     height: 20em;
     background-image: url(../img/pet-sitters-gato-rascador-juguete.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-}
 
-.titulo-tu-tranquilidad {
-    font-size: 2rem;
-}
-
-.tu-tranquilidad-text {
-    display: flex;
-    flex-direction: column;
-    font-size: 1rem;
-    padding: 2em;
-}
-
-
-
-.banner-unite-comunidad {
-    @include flex-center;
-    background-color: #515151;
-    font-size: 1rem;
-    height: 25em;
-flex-direction: column;
-
-background-image: url(../img/pet-sitters-comunidad.jpg);
-    background-size: cover;
-    background-position: bottom;
-    background-attachment: fixed;
-}
-
-.text-banner-unite {
-    font-size: 2rem;
-    color: #ffffff;
-    text-align: center;
-}
-
-.text-input-mail {
-    text-align: center;
-}
-
-
-//--DESKTOP--//
-@media (min-width: 1024px) {
-
-    .tu-tranquilidad-section {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr;
-        font-size: 1rem;
-        padding: 2em 0em;
-
-    }
-
-    .img-tu-tranquilidad {
+    @include desktop {
         grid-column: 1/2;
         grid-row: 1/2;
         font-size: 1rem;
@@ -83,40 +40,51 @@ background-image: url(../img/pet-sitters-comunidad.jpg);
         height: 25em;
         background-attachment: scroll;
     }
+}
 
-    .tu-tranquilidad-text {
-        grid-column: 2/3;
-        grid-row: 1/2;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: left;
+&__text{
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    padding: 1.5em;
+
+    @include desktop {
+        .tu-tranquilidad-text {
+            grid-column: 2/3;
+            grid-row: 1/2;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: left;
+            text-align: left;
+            font-size: 1rem;
+            padding: 2em;
+            gap: 0.2em;
+        }
+    }
+}
+
+
+&__titulo{
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+&__p{
+text-align: center;
+
+    @include desktop{
         text-align: left;
+    }
+}
+
+&__block-btn{
+        @include flex-center;
+        flex-direction: row;
         font-size: 1rem;
-        padding: 2em;
-        gap: 0.2em;
+        padding: 1em;
     }
 
-
-    .banner-unite-comunidad {
-        background-color: #515151;
-        font-size: 1rem;
-        height: 45em;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        background-image: url(../img/pet-sitters-comunidad.jpg);
-        background-size: cover;
-        background-position: bottom;
-    }
-
-    .text-banner-unite {
-        font-size: 3rem;
-        color: #ffffff;
-        text-align: center;
-    }
 
 
 }
@@ -125,4 +93,40 @@ background-image: url(../img/pet-sitters-comunidad.jpg);
 
 
 
+.banner-unite-comunidad {
+    @include flex-center;
+    text-align: center;
+    background-color: $color-blanco;
+    font-size: 1rem;
+    height: 25em;
+    background-image: url(../img/pet-sitters-comunidad.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
 
+    @include desktop {
+        @include flex-center;
+        font-size: 1rem;
+        height: 45em;
+        flex-direction: column;
+        text-align: center;
+        background-size: cover;
+        background-position: bottom;
+    }
+}
+
+.text-banner-unite {
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: center;
+
+    @include desktop {
+        font-size: 3rem;
+        color: $color-blanco;
+        text-align: center;
+    }
+}
+
+.text-input-mail {
+    text-align: center;
+}

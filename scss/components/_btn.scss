@@ -25,17 +25,11 @@
     }
 }
 
-
-//---Seccion Tu Tranquilidad - Index---//
-.block-btn-tu-tranquilidad {
-    font-size: 1rem;
-    padding: 1em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1rem;
+.tu-tranquilidad__btn{
+    @extend .block__btn;
+    @include flex-center;
 }
+
 
 
 //----Seccion Nosotros - Equipo---//
@@ -85,12 +79,6 @@
     }
 
 
-    .block-btn-tu-tranquilidad {
-        display: flex;
-        flex-direction: row;
-        font-size: 1rem;
-        padding: 2em;
-    }
 
     .btn-equipo {
         display: flex;
