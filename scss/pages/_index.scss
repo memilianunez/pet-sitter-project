@@ -65,10 +65,14 @@
 
 
     &__titulo {
-        font-size: 1.7rem;
+        font-size: 2rem;
         text-align: center;
 
-        @include desktop{
+        @include tablet {
+            font-size: 2.5em;
+        }
+
+        @include desktop {
             font-size: 2em;
             text-align: left;
         }
@@ -88,7 +92,7 @@
         font-size: 1rem;
         padding: 1em;
 
-        @include desktop{
+        @include desktop {
             display: flex;
             justify-content: start;
         }
@@ -120,11 +124,11 @@
     }
 
 
-    &__titulo{
-        font-size: 2rem;
+    &__titulo {
+        font-size: 2.5rem;
         color: $color-blanco;
         text-align: center;
-    
+
         @include desktop {
             font-size: 3rem;
             color: $color-blanco;
@@ -132,7 +136,7 @@
         }
     }
 
-    &__input{
+    &__input {
         text-align: center;
     }
 }

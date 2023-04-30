@@ -530,8 +530,13 @@ nav ul li a {
   }
 }
 .tu-tranquilidad__titulo {
-  font-size: 1.7rem;
+  font-size: 2rem;
   text-align: center;
+}
+@media (min-width: 658px) and (max-width: 1023px) {
+  .tu-tranquilidad__titulo {
+    font-size: 2.5em;
+  }
 }
 @media (min-width: 1024px) {
   .tu-tranquilidad__titulo {
@@ -589,7 +594,7 @@ nav ul li a {
   }
 }
 .unite-comunidad__titulo {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #ffffff;
   text-align: center;
 }
