@@ -6,7 +6,7 @@
     padding: 1em;
 
     &__btn {
-        background-color: $color-btn-fondo;
+        background-color: $color-fondo-btn;
         color: $color-btn-text;
         border: solid 0.2em $color-btn-border;
         font-weight: 600;
@@ -17,7 +17,7 @@
     }
 
     &__btn:hover {
-        background-color: $color-btn-fondo-hover;
+        background-color: $color-fondo-btn-hover;
         color: $color-btn-text-hover;
         border: solid 0.2em $color-btn-border-hover;
         font-size: 1rem;
@@ -25,8 +25,17 @@
     }
 }
 
-.tu-tranquilidad__btn{
+.tu-tranquilidad__btn {
     @extend .block__btn;
+}
+
+.btn-unirme {
+    @extend .block__btn;
+    font-size: 1rem;
+    margin: 1em;
+    background-color: aqua;
+    color: $color-btn-text-hover;
+    border: solid 0.2em $color-btn-border-hover;
 }
 
 

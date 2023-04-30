@@ -43,6 +43,15 @@ p {
   font-weight: normal;
 }
 
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #515151;
+}
+
 .block {
   display: flex;
   flex-direction: column;
@@ -50,7 +59,7 @@ p {
   font-size: 2em;
   padding: 1em;
 }
-.block__btn, .tu-tranquilidad__btn {
+.block__btn, .btn-unirme, .tu-tranquilidad__btn {
   background-color: rgba(201, 130, 245, 0.8);
   color: #8003c8;
   border: solid 0.2em #8003c8;
@@ -60,12 +69,20 @@ p {
   padding: 0.5em 1.5em;
   text-decoration: none;
 }
-.block__btn:hover, .tu-tranquilidad__btn:hover {
+.block__btn:hover, .btn-unirme:hover, .tu-tranquilidad__btn:hover {
   background-color: #90e0ef;
   color: #00b4d8;
   border: solid 0.2em #00b4d8;
   font-size: 1rem;
   font-weight: 600;
+}
+
+.btn-unirme {
+  font-size: 1rem;
+  margin: 1em;
+  background-color: aqua;
+  color: #00b4d8;
+  border: solid 0.2em #00b4d8;
 }
 
 .btn-equipo {
@@ -216,32 +233,88 @@ p {
   grid-template-columns: repeat(2, 50vw);
   grid-template-rows: 1.5fr 1fr 0.5fr;
   text-decoration: none;
+  font-size: 1rem;
   text-align: 1rem;
   padding: 1em 0em 0em 0em;
 }
-
-.menu-footer {
+@media (min-width: 658px) and (max-width: 1023px) {
+  .footer {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 0.5fr;
+    font-size: 1rem;
+    padding: 1em 0em 0em 0em;
+  }
+}
+@media (min-width: 1024px) {
+  .footer {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 0.5fr;
+    font-size: 1rem;
+    padding-top: 2em;
+  }
+}
+.footer__menu {
   grid-column: 1/2;
   grid-row: 1/2;
-  padding: 20px;
-  text-decoration: none;
+  font-size: 1rem;
+  padding: 1.5em;
 }
-
-.mas-info {
+@media (min-width: 658px) and (max-width: 1023px) {
+  .footer__menu {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-size: 1rem;
+    padding: 1em 0em 1em 3em;
+  }
+}
+@media (min-width: 1024px) {
+  .footer__menu {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-size: 1rem;
+    padding: 0em 0em 2em 8em;
+  }
+}
+.footer__mas-info {
   grid-column: 1/2;
   grid-row: 2/3;
-  padding: 20px;
-  text-decoration: none;
+  font-size: 1rem;
+  padding: 1.5em;
 }
-
-.num-contact-mail {
+@media (min-width: 658px) and (max-width: 1023px) {
+  .footer__mas-info {
+    grid-column: 2/3;
+    grid-row: -3/-2;
+  }
+}
+@media (min-width: 1024px) {
+  .footer__mas-info {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding: 0em 0em 0em 8em;
+  }
+}
+.footer__num-contacto {
   grid-column: 2/3;
   grid-row: -3/-2;
-  padding: 20px;
+  font-size: 1rem;
+  padding: 1em;
   text-decoration: none;
 }
-
-.redes {
+@media (min-width: 658px) and (max-width: 1023px) {
+  .footer__num-contacto {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+}
+@media (min-width: 1024px) {
+  .footer__num-contacto {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    padding: 0em 0em 0em 8em;
+  }
+}
+.footer__redes {
   background-color: #f0eeee;
   grid-column: -3/-1;
   grid-row: 3/4;
@@ -252,31 +325,8 @@ p {
   font-size: 1rem;
   gap: 1em;
 }
-
 @media (min-width: 658px) and (max-width: 1023px) {
-  .footer {
-    background-color: rgba(242, 241, 241, 0.6039215686);
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 0.5fr;
-    font-size: 1rem;
-    padding: 1em 0em 0em 0em;
-  }
-  .menu-footer {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    font-size: 1rem;
-    padding: 1em 0em 1em 3em;
-  }
-  .mas-info {
-    grid-column: 2/3;
-    grid-row: -3/-2;
-  }
-  .num-contact-mail {
-    grid-column: 3/4;
-    grid-row: 1/2;
-  }
-  .redes {
+  .footer__redes {
     grid-column: 1/4;
     grid-row: 2/3;
     background-color: #f0eeee;
@@ -284,35 +334,13 @@ p {
   }
 }
 @media (min-width: 1024px) {
-  .footer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 0.5fr;
-    font-size: 1rem;
-    padding-top: 2em;
-  }
-  .menu-footer {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    font-size: 1rem;
-    padding: 0em 0em 2em 8em;
-  }
-  .mas-info {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    padding: 0em 0em 0em 8em;
-  }
-  .num-contact-mail {
-    grid-column: 3/4;
-    grid-row: 1/2;
-    padding: 0em 0em 0em 8em;
-  }
-  .redes {
+  .footer__redes {
     grid-column: 1/4;
     grid-row: 2/3;
     justify-content: center;
   }
 }
+
 .contenedor-header {
   background-color: #e4e4e4;
   padding: 1em;

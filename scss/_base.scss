@@ -8,12 +8,12 @@ $color-negro: #000000;
 $color-bloques-secciones:#e4e4e465;
 
 
-$color-btn-fondo: #c982f5cc;
+$color-fondo-btn: #c982f5cc;
 $color-btn-text: #8003c8;
 $color-btn-border: #8003c8;
 
 
-$color-btn-fondo-hover: #90e0ef;
+$color-fondo-btn-hover: #90e0ef;
 $color-btn-text-hover: #00b4d8;
 $color-btn-border-hover: #00b4d8;
 
@@ -22,6 +22,9 @@ $color-header: #e4e4e4;
 $color-fondo-tarjeta: #d2a2ee68;
 $color-borde-tarjeta: #64037c;
 $color-fondo-tarjeta-hover:#c982f5cc;
+
+$color-fondo-footer:#f2f1f19a;
+$color-fondo-footer-redes:#f0eeee;
 
 $MQ-mobile: 320px;
 
@@ -76,6 +79,15 @@ p {
     font-weight: normal;
 }
 
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: $color-primario;
+}
+
 @mixin flex-center {
     display: flex;
     justify-content: center;
@@ -101,3 +113,4 @@ p {
         @content;
     }
 }
+

@@ -1,37 +1,94 @@
 .footer {
-    background-color: #f2f1f19a;
-    color: #515151;
+    background-color: $color-fondo-footer;
+    color: $color-primario;
     display: grid;
     grid-template-columns: repeat(2, 50vw);
     grid-template-rows: 1.5fr 1fr 0.5fr;
     text-decoration: none;
+    font-size: 1rem;
     text-align: 1rem;
+    padding: 1em 0em 0em 0em;
+
+@include tablet{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 0.5fr;
+    font-size: 1rem;
     padding: 1em 0em 0em 0em;
 }
 
-.menu-footer {
+@include desktop{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 0.5fr;
+        font-size: 1rem;
+        padding-top: 2em;
+    }
+
+
+&__menu{
     grid-column: 1/2;
     grid-row: 1/2;
-    padding: 20px;
-    text-decoration: none;
+    font-size: 1rem;
+    padding: 1.5em;
+
+@include tablet{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-size: 1rem;
+    padding: 1em 0em 1em 3em;
 }
 
-.mas-info {
+@include desktop {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-size: 1rem;
+    padding: 0em 0em 2em 8em;
+}
+
+}
+
+&__mas-info{
     grid-column: 1/2;
     grid-row: 2/3;
-    padding: 20px;
-    text-decoration: none;
+    font-size: 1rem;
+    padding: 1.5em;
+
+    @include tablet {
+        grid-column: 2/3;
+        grid-row: -3/-2;
+    }
+
+@include desktop {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding: 0em 0em 0em 8em;
+
 }
 
-.num-contact-mail {
+}
+
+
+&__num-contacto{
     grid-column: 2/3;
     grid-row: -3/-2;
-    padding: 20px;
+    font-size: 1rem;
+    padding: 1em;
     text-decoration: none;
+
+@include tablet{
+    grid-column: 3/4;
+    grid-row: 1/2;
 }
 
-.redes {
-    background-color: #f0eeee;
+@include desktop{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    padding: 0em 0em 0em 8em;
+}
+
+}
+
+&__redes{
+    background-color: $color-fondo-footer-redes;
     grid-column: -3/-1;
     grid-row: 3/4;
     display: flex;
@@ -40,83 +97,21 @@
     align-items: center;
     font-size: 1rem;
     gap: 1em;
+
+@include tablet{
+    grid-column: 1/4;
+    grid-row: 2/3;
+    background-color: #f0eeee;
+    width: 100vw;
 }
 
-@media (min-width: 658px) and (max-width: 1023px) {
-    
-    .footer {
-        background-color: #f2f1f19a;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr 0.5fr;
-        font-size: 1rem;
-        padding: 1em 0em 0em 0em;
-    }
-
-    .menu-footer {
-        grid-column: 1/2;
-        grid-row: 1/2;
-        font-size: 1rem;
-        padding: 1em 0em 1em 3em;
-    }
-
-    .mas-info {
-        grid-column: 2/3;
-        grid-row: -3/-2;
-    }
-
-    .num-contact-mail {
-        grid-column: 3/4;
-        grid-row: 1/2;
-    }
-
-    .redes {
-        grid-column: 1/4;
-        grid-row: 2/3;
-        background-color: #f0eeee;
-        width: 100vw;
-    }
-
+@include desktop{
+    grid-column: 1/4;
+    grid-row: 2/3;
+    justify-content: center;
+}
 }
 
 
-@media (min-width: 1024px) {
-
-    .footer {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr 0.5fr;
-
-        font-size: 1rem;
-        padding-top: 2em;
-    }
-
-    .menu-footer {
-        grid-column: 1/2;
-        grid-row: 1/2;
-        font-size: 1rem;
-        padding: 0em 0em 2em 8em;
-    }
-
-    .mas-info {
-        grid-column: 2/3;
-        grid-row: 1/2;
-        padding: 0em 0em 0em 8em;
-
-    }
-
-    .num-contact-mail {
-        grid-column: 3/4;
-        grid-row: 1/2;
-        padding: 0em 0em 0em 8em;
-
-    }
-
-    .redes {
-        grid-column: 1/4;
-        grid-row: 2/3;
-        justify-content: center;
-    }
-
-
 }
+
