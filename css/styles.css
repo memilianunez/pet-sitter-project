@@ -164,34 +164,120 @@ a {
   align-items: center;
   flex-direction: column;
   background-color: rgba(210, 162, 238, 0.4078431373);
-  border: 0.2em solid #64037c;
+  border: 0.2em solid rgba(115, 10, 141, 0.6078431373);
   font-size: 1rem;
   padding: 0.5em;
   border-radius: 2em;
 }
 @media (min-width: 658px) and (max-width: 1023px) {
   .pasos__tarjeta {
-    height: 330px;
+    font-size: 1rem;
+    height: 18em;
   }
 }
 @media (min-width: 1024px) {
   .pasos__tarjeta {
-    height: 440px;
+    font-size: 1rem;
+    height: 21em;
   }
 }
 .pasos__tarjeta:hover {
-  background-color: rgba(201, 130, 245, 0.8);
+  background-color: rgba(201, 130, 245, 0.5960784314);
 }
 .pasos__icono {
   font-size: 2.2rem;
   padding: 0.3em;
+  color: #80509d;
 }
 .pasos__titulo {
   font-size: 1.3em;
+  color: #80509d;
+  font-size: 1.2rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
 }
 .pasos__p {
   font-size: 1rem;
-  padding: 2em;
+  padding: 1em;
+  text-align: center;
+}
+
+.servicios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6rem;
+  flex-direction: column;
+  font-size: 1rem;
+  text-align: center;
+}
+@media (min-width: 658px) and (max-width: 1023px) {
+  .servicios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+  }
+}
+@media (min-width: 658px) and (max-width: 1023px) and (min-width: 1024px) {
+  .servicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    padding: 0em 1em;
+    gap: 1em;
+  }
+}
+@media (min-width: 1024px) {
+  .servicios__uno {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1rem;
+    padding: 0em 1em;
+    gap: 1em;
+  }
+}
+@media (min-width: 1024px) {
+  .servicios__dos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1rem;
+    padding: 0em 1em;
+    gap: 1em;
+  }
+}
+.servicios__tarjeta {
+  background-color: rgba(210, 162, 238, 0.4078431373);
+  border: 0.2em solid rgba(115, 10, 141, 0.6078431373);
+  border: 0.2em solid rgba(115, 10, 141, 0.6078431373);
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 700;
+  width: 20em;
+  height: 18em;
+  overflow: scroll;
+  padding: 15px 10px 0px 0px;
+  margin: 10px;
+}
+.servicios__tarjeta:hover {
+  background-color: rgba(201, 130, 245, 0.5960784314);
+}
+.servicios__icono {
+  font-size: 2.2rem;
+  padding: 0.3em;
+  color: #80509d;
+}
+.servicios__tarjeta-titulo {
+  color: #80509d;
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   text-align: center;
 }
 
@@ -307,6 +393,30 @@ a {
     grid-row: 2/3;
     justify-content: center;
   }
+}
+
+.ico-facebook {
+  color: #515151;
+}
+
+.ico-facebook:hover {
+  color: rgba(201, 130, 245, 0.5960784314);
+}
+
+.ico-instagram {
+  color: #515151;
+}
+
+.ico-instagram:hover {
+  color: rgba(201, 130, 245, 0.5960784314);
+}
+
+.ico-tik-tok {
+  color: #515151;
+}
+
+.ico-tik-tok:hover {
+  color: rgba(201, 130, 245, 0.5960784314);
 }
 
 .contenedor-header {
@@ -774,7 +884,7 @@ nav ul li a {
   }
 }
 
-.servicios__banner {
+.servicios__portada {
   background-color: #515151;
   background-image: url(../img/como-perros-y-gatos.jpg);
   resize: both;
@@ -787,13 +897,13 @@ nav ul li a {
   height: 30em;
 }
 
-.servicios__titulo {
+.servicios__titulo-gral {
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: center;
   align-items: center;
-  font-size: 1.8rem;
+  font-size: 2rem;
   padding: 0.5em;
 }
 

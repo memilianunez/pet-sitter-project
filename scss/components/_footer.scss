@@ -109,6 +109,28 @@
     justify-content: center;
 }
 }
-
 }
 
+.ico-facebook{
+    color: $color-primario;
+}
+
+.ico-facebook:hover{
+    color: $color-fondo-tarjeta-hover;
+}
+
+.ico-instagram{
+    color: $color-primario;
+}
+
+.ico-instagram:hover{
+    color: $color-fondo-tarjeta-hover;
+}
+
+.ico-tik-tok{
+    color: $color-primario;
+}
+
+.ico-tik-tok:hover{
+    color: $color-fondo-tarjeta-hover;
+}

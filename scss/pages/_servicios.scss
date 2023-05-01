@@ -1,4 +1,4 @@
-.servicios__banner {
+.servicios__portada {
     background-color: $color-primario;
     background-image: url(../img/como-perros-y-gatos.jpg);
 
@@ -14,13 +14,17 @@
     height: 30em;
 }
 
-.servicios__titulo {
+.servicios__titulo-gral {
     @include flex-center;
     justify-content: center;
     align-items: center;
-    font-size: 1.8rem;
+    font-size: 2rem;
     padding: 0.5em;
 }
+
+
+
+
 
 .bloque-imagen-servicios {
     background-color: #515151;
@@ -44,5 +48,3 @@
 
     margin: 80px 0px 10px;
 }
-
-

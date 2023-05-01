@@ -49,11 +49,13 @@
         border-radius: 2em;
 
         @include tablet {
-            height: 330px;
+            font-size: 1rem;
+            height: 18em;
         }
 
         @include desktop {
-            height: 440px;
+            font-size: 1rem;
+            height: 21em;
         }
     }
 
@@ -64,17 +66,110 @@
     &__icono {
         font-size: 2.2rem;
         padding: 0.3em;
+        color: $color-texto-tarjeta;
     }
 
     &__titulo {
         font-size: 1.3em;
+        color: $color-texto-tarjeta;
+        font-size: 1.2rem;
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
     }
 
     &__p {
         font-size: 1rem;
-        padding: 2em;
+        padding: 1em;
         text-align: center;
     }
 
+
+
 }
 
+.servicios {
+    @include flex-center;
+    font-size: 6rem;
+    flex-direction: column;
+    font-size: 1rem;
+    text-align: center;
+
+    @include tablet {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+
+        @include desktop {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 1rem;
+            padding: 0em 1em;
+            gap: 1em;
+
+        }
+    }
+
+    &__uno {
+        @include desktop {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font-size: 1rem;
+            padding: 0em 1em;
+            gap: 1em;
+        }
+    }
+
+    &__dos{
+        @include desktop{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font-size: 1rem;
+            padding: 0em 1em;
+            gap: 1em;  
+        }
+    }
+
+    &__tarjeta {
+        background-color: $color-fondo-tarjeta;
+        border: 0.2em solid $color-borde-tarjeta;
+        border: 0.2em solid $color-borde-tarjeta;
+        border-radius: 25px;
+        font-size: 1rem;
+        font-weight: 700;
+        width: 20em;
+        height: 18em;
+
+        overflow: scroll;
+
+        padding: 15px 10px 0px 0px;
+        margin: 10px;
+    }
+
+    &__tarjeta:hover {
+        background-color: $color-fondo-tarjeta-hover;
+    }
+
+    &__icono {
+        font-size: 2.2rem;
+        padding: 0.3em;
+        color: $color-texto-tarjeta;
+    }
+
+    &__tarjeta-titulo {
+        color: $color-texto-tarjeta;
+        font-size: 1.1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+
+
+}
