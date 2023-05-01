@@ -25,7 +25,6 @@
         text-align: center;
     }
 
-
     @include desktop {
         display: flex;
         flex-direction: row;
@@ -92,7 +91,6 @@
 
 .servicios {
     @include flex-center;
-    font-size: 6rem;
     flex-direction: column;
     font-size: 1rem;
     text-align: center;
@@ -101,34 +99,50 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr;
+        font-size: 1rem;
+        margin: 0 2em;
+
+
 
         @include desktop {
             display: flex;
             flex-direction: column;
             align-items: center;
             font-size: 1rem;
-
             gap: 1em;
 
         }
     }
 
     &__uno {
+        @include tablet {
+            justify-self: center;
+        }
+
+
         @include desktop {
+            width: 100%;
             display: flex;
+            justify-content: center;
             flex-direction: row;
             align-items: center;
             font-size: 1rem;
             padding: 0em 1em;
             gap: 1em;
             margin: 1em 1em 1em 1em;
-
         }
     }
 
     &__dos {
+        @include tablet {
+            justify-self: center;
+        }
+
+
         @include desktop {
+            width: 100%;
             display: flex;
+            justify-content: center;
             flex-direction: row;
             align-items: center;
             font-size: 1rem;
@@ -147,12 +161,22 @@
         font-weight: 700;
         width: 20em;
         height: 18em;
-
-        overflow: scroll;
-
         padding: 1em 1em 0em 1em;
         margin: 10px;
+
+        @include tablet {
+            @include flex-center;
+            flex-direction: column;
+            width: fit-content;
+            font-size: 1rem;
+            padding: 1em;
+            height: 19em;
+        }
+
     }
+
+
+
 
     &__tarjeta:hover {
         background-color: $color-fondo-tarjeta-hover;

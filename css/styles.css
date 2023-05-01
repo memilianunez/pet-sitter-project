@@ -186,7 +186,6 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 6rem;
   flex-direction: column;
   font-size: 1rem;
   text-align: center;
@@ -196,6 +195,8 @@ textarea {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
+    font-size: 1rem;
+    margin: 0 2em;
   }
 }
 @media (min-width: 658px) and (max-width: 1023px) and (min-width: 1024px) {
@@ -207,9 +208,16 @@ textarea {
     gap: 1em;
   }
 }
+@media (min-width: 658px) and (max-width: 1023px) {
+  .servicios__uno {
+    justify-self: center;
+  }
+}
 @media (min-width: 1024px) {
   .servicios__uno {
+    width: 100%;
     display: flex;
+    justify-content: center;
     flex-direction: row;
     align-items: center;
     font-size: 1rem;
@@ -218,9 +226,16 @@ textarea {
     margin: 1em 1em 1em 1em;
   }
 }
+@media (min-width: 658px) and (max-width: 1023px) {
+  .servicios__dos {
+    justify-self: center;
+  }
+}
 @media (min-width: 1024px) {
   .servicios__dos {
+    width: 100%;
     display: flex;
+    justify-content: center;
     flex-direction: row;
     align-items: center;
     font-size: 1rem;
@@ -238,9 +253,20 @@ textarea {
   font-weight: 700;
   width: 20em;
   height: 18em;
-  overflow: scroll;
   padding: 1em 1em 0em 1em;
   margin: 10px;
+}
+@media (min-width: 658px) and (max-width: 1023px) {
+  .servicios__tarjeta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: fit-content;
+    font-size: 1rem;
+    padding: 1em;
+    height: 19em;
+  }
 }
 .servicios__tarjeta:hover {
   background-color: rgba(201, 130, 245, 0.4509803922);

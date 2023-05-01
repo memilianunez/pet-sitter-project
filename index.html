@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="¿Necesitás dejar a tu mascota con alguien de confianza? Conectá con cuidadores de mascotas certificados.">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -11,22 +15,25 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="icon" href="./img/pet-sitting-favicon-web.ico">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="./css/styles.css">
-    <title>Inicio - Pet Sitters</title>
+    <title>Servicios de cuidados y paseos para tu mascota | Pet Sitters</title>
 
 </head>
 
 <body>
-    
+
     <header class="header">
         <h1>Pet-Sitters</h1>
 
         <div class="contenedor-header">
             <div class="contenedor-logo">
-                <img class="logo-pet-sitters" src="./img/pet-sitters-logo-color.png" alt="logotipo-pet-sitters">
+                <img class="logo-pet-sitters" src="./img/pet-sitters-logo-color.png" alt="logotipo pet sitters">
             </div>
 
-            <img class="icono-menu-mobile" src="./img/icono-menu-hamburguesa.png" alt="icono-mobile-menu">
+            <img class="icono-menu-mobile" src="./img/icono-menu-hamburguesa.png" alt="icono mobile menu">
         </div>
 
 
@@ -60,7 +67,7 @@
 
         <h2 class="titulo-ppal">¿Necesitás que cuiden a tu mascota?</h2>
 
-        <section class="pasos">
+        <section data-aos="fade-up" class="pasos">
 
             <div class="pasos__uno">
                 <article class="pasos__tarjeta">
@@ -106,7 +113,7 @@
             </div>
         </section>
 
-        <section class="tu-tranquilidad">
+        <section data-aos="fade-right" class="tu-tranquilidad">
             <div class="tu-tranquilidad__img"></div>
             <div>
                 <div class="tu-tranquilidad__text">
@@ -154,7 +161,7 @@
 
     </main>
 
-    
+
     <footer class="footer">
         <div class="footer__menu">
             <ul>
@@ -190,6 +197,12 @@
         </div>
 
     </footer>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 
