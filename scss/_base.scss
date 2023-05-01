@@ -26,7 +26,7 @@ $color-header: #e4e4e4;
 $color-texto-tarjeta: #80509d;
 $color-fondo-tarjeta: #d2a2ee68;
 $color-borde-tarjeta: #730a8d9b;
-$color-fondo-tarjeta-hover:#c982f598;
+$color-fondo-tarjeta-hover:#c982f5;
 
 
 $color-fondo-footer:#f2f1f19a;
@@ -109,12 +109,12 @@ a{
 }
 
 
+
 @mixin tablet () {
     @media (min-width: 658px) and (max-width: 1023px) {
         @content;
     }
 }
-
 
 @mixin desktop() {
     @media (min-width: 1024px) {

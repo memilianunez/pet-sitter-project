@@ -24,27 +24,42 @@
 
 
 
-
-
-.bloque-imagen-servicios {
-    background-color: #515151;
-    background-image: url(../img/como-perros-y-gatos.jpg);
-
-    resize: both;
-    overflow: auto;
-
-    background-repeat: no-repeat;
-    background-position: top;
+.servicios__bloque-pet-sitter{
+    @include flex-center;
+    text-align: center;
+    background-color: $color-blanco;
+    font-size: 1rem;
+    height: 25em;
+    background-image: url(../img/pet-sitters-gato-persona.jpg);
+    
     background-size: cover;
+    background-position: top;
     background-attachment: fixed;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include desktop {
+        @include flex-center;
+        font-size: 1rem;
+        height: 45em;
+        flex-direction: column;
+        text-align: center;
+        background-size: cover;
+        background-position: bottom;
+    }
 
-    min-width: none;
-    min-height: 600px;
 
-    margin: 80px 0px 10px;
+    &__titulo {
+        font-size: 2.5rem;
+        color: $color-blanco;
+        text-align: center;
+
+        @include desktop {
+            font-size: 3rem;
+            color: $color-blanco;
+            text-align: center;
+        }
+    }
+
+    &__input {
+        text-align: center;
+    }
 }

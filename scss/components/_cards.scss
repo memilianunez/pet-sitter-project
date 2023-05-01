@@ -107,7 +107,7 @@
             flex-direction: column;
             align-items: center;
             font-size: 1rem;
-            padding: 0em 1em;
+
             gap: 1em;
 
         }
@@ -121,17 +121,20 @@
             font-size: 1rem;
             padding: 0em 1em;
             gap: 1em;
+            margin: 1em 1em 1em 1em;
+
         }
     }
 
-    &__dos{
-        @include desktop{
+    &__dos {
+        @include desktop {
             display: flex;
             flex-direction: row;
             align-items: center;
             font-size: 1rem;
             padding: 0em 1em;
-            gap: 1em;  
+            gap: 1em;
+            margin: 1em 1em 5em 1em;
         }
     }
 
@@ -147,7 +150,7 @@
 
         overflow: scroll;
 
-        padding: 15px 10px 0px 0px;
+        padding: 1em 1em 0em 1em;
         margin: 10px;
     }
 

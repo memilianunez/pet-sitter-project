@@ -182,7 +182,7 @@ a {
   }
 }
 .pasos__tarjeta:hover {
-  background-color: rgba(201, 130, 245, 0.5960784314);
+  background-color: #c982f5;
 }
 .pasos__icono {
   font-size: 2.2rem;
@@ -227,7 +227,6 @@ a {
     flex-direction: column;
     align-items: center;
     font-size: 1rem;
-    padding: 0em 1em;
     gap: 1em;
   }
 }
@@ -239,6 +238,7 @@ a {
     font-size: 1rem;
     padding: 0em 1em;
     gap: 1em;
+    margin: 1em 1em 1em 1em;
   }
 }
 @media (min-width: 1024px) {
@@ -249,6 +249,7 @@ a {
     font-size: 1rem;
     padding: 0em 1em;
     gap: 1em;
+    margin: 1em 1em 5em 1em;
   }
 }
 .servicios__tarjeta {
@@ -261,11 +262,11 @@ a {
   width: 20em;
   height: 18em;
   overflow: scroll;
-  padding: 15px 10px 0px 0px;
+  padding: 1em 1em 0em 1em;
   margin: 10px;
 }
 .servicios__tarjeta:hover {
-  background-color: rgba(201, 130, 245, 0.5960784314);
+  background-color: #c982f5;
 }
 .servicios__icono {
   font-size: 2.2rem;
@@ -400,7 +401,7 @@ a {
 }
 
 .ico-facebook:hover {
-  color: rgba(201, 130, 245, 0.5960784314);
+  color: #c982f5;
 }
 
 .ico-instagram {
@@ -408,7 +409,7 @@ a {
 }
 
 .ico-instagram:hover {
-  color: rgba(201, 130, 245, 0.5960784314);
+  color: #c982f5;
 }
 
 .ico-tik-tok {
@@ -416,7 +417,7 @@ a {
 }
 
 .ico-tik-tok:hover {
-  color: rgba(201, 130, 245, 0.5960784314);
+  color: #c982f5;
 }
 
 .contenedor-header {
@@ -907,22 +908,46 @@ nav ul li a {
   padding: 0.5em;
 }
 
-.bloque-imagen-servicios {
-  background-color: #515151;
-  background-image: url(../img/como-perros-y-gatos.jpg);
-  resize: both;
-  overflow: auto;
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
-  background-attachment: fixed;
+.servicios__bloque-pet-sitter {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  min-width: none;
-  min-height: 600px;
-  margin: 80px 0px 10px;
+  align-items: center;
+  text-align: center;
+  background-color: #ffffff;
+  font-size: 1rem;
+  height: 25em;
+  background-image: url(../img/pet-sitters-gato-persona.jpg);
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+}
+@media (min-width: 1024px) {
+  .servicios__bloque-pet-sitter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    height: 45em;
+    flex-direction: column;
+    text-align: center;
+    background-size: cover;
+    background-position: bottom;
+  }
+}
+.servicios__bloque-pet-sitter__titulo {
+  font-size: 2.5rem;
+  color: #ffffff;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .servicios__bloque-pet-sitter__titulo {
+    font-size: 3rem;
+    color: #ffffff;
+    text-align: center;
+  }
+}
+.servicios__bloque-pet-sitter__input {
+  text-align: center;
 }
 
 .banner-ppal-faqs {
