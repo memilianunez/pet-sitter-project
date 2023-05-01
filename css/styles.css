@@ -90,7 +90,7 @@ textarea {
 .btn-unirme {
   font-size: 1rem;
   margin: 1em;
-  background-color: aqua;
+  background-color: rgba(201, 130, 245, 0.8);
   color: #00b4d8;
   border: solid 0.2em #00b4d8;
 }

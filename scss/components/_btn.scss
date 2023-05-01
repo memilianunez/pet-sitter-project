@@ -35,7 +35,7 @@
     @extend .block__btn;
     font-size: 1rem;
     margin: 1em;
-    background-color: aqua;
+    background-color: $color-fondo-btn;
     color: $color-btn-text-hover;
     border: solid 0.2em $color-btn-border-hover;
 }
@@ -49,6 +49,5 @@
 
 .btn-conocer-mas-nosotros {
 @extend .block__btn;
-
 }
 

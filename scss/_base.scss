@@ -34,7 +34,7 @@ $color-fondo-footer-redes:#f0eeee;
 
 $color-fondo-formulario: #a68cf548; 
 
-$MQ-mobile: 320px;
+
 
 
 
@@ -45,8 +45,6 @@ $MQ-mobile: 320px;
     padding: 0;
     box-sizing: 0;
 }
-
-
 
 body {
     font-family: $fuente-principal;
@@ -109,8 +107,6 @@ textarea {
 
 
 
-
-
 @mixin flex-center {
     display: flex;
     justify-content: center;
@@ -122,6 +118,10 @@ textarea {
     justify-content: $justify;
     align-items: $align;
 }
+
+
+
+
 
 
 
