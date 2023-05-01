@@ -18,7 +18,7 @@ h1 {
 }
 
 h2 {
-  color: #90e0ef;
+  color: #7acedd;
   font-family: "Poppins", sans-serif;
   font-size: 22px;
   font-weight: 800;
@@ -31,7 +31,7 @@ h3 {
 }
 
 h4 {
-  color: #D2A2EE;
+  color: #c288e4;
   font-family: "Poppins", sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -182,7 +182,7 @@ a {
   }
 }
 .pasos__tarjeta:hover {
-  background-color: #c982f5;
+  background-color: rgba(201, 130, 245, 0.4509803922);
 }
 .pasos__icono {
   font-size: 2.2rem;
@@ -266,7 +266,7 @@ a {
   margin: 10px;
 }
 .servicios__tarjeta:hover {
-  background-color: #c982f5;
+  background-color: rgba(201, 130, 245, 0.4509803922);
 }
 .servicios__icono {
   font-size: 2.2rem;
@@ -401,7 +401,7 @@ a {
 }
 
 .ico-facebook:hover {
-  color: #c982f5;
+  color: rgba(201, 130, 245, 0.4509803922);
 }
 
 .ico-instagram {
@@ -409,7 +409,7 @@ a {
 }
 
 .ico-instagram:hover {
-  color: #c982f5;
+  color: rgba(201, 130, 245, 0.4509803922);
 }
 
 .ico-tik-tok {
@@ -417,7 +417,7 @@ a {
 }
 
 .ico-tik-tok:hover {
-  color: #c982f5;
+  color: rgba(201, 130, 245, 0.4509803922);
 }
 
 .contenedor-header {
@@ -803,7 +803,7 @@ nav ul li a {
 }
 
 .nuestro-equipo__titulo {
-  color: #90e0ef;
+  color: #7acedd;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -843,7 +843,7 @@ nav ul li a {
   padding: 1em 0em 0em 0em;
 }
 .equipo__nombres:hover {
-  color: #90e0ef;
+  color: #7acedd;
 }
 .equipo__sobre {
   color: #515151;
@@ -950,68 +950,62 @@ nav ul li a {
   text-align: center;
 }
 
-.banner-ppal-faqs {
-  background-image: url(../img/perro-con-dos-colas.png);
-  background-color: #515151;
-  resize: both;
-  overflow: auto;
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
-  background-attachment: fixed;
-  min-width: none;
-  min-height: 800px;
-}
-
-.titulo-faqs {
-  color: #79CACC;
-  letter-spacing: 10px;
-  text-align: center;
-  padding: 40px;
-}
-
-div article h3 {
-  color: #875EAA;
-}
-
-.contacto-formulario {
-  background-color: rgba(149, 149, 149, 0.3490196078);
-}
-
-.pregunta-uno {
-  padding: 40px;
-}
-
-.pregunta-dos {
-  padding: 40px;
-}
-
-.pregunta-tres {
-  padding: 40px;
-}
-
-.pregunta-cuatro {
-  padding: 40px;
-}
-
-.preguntacinco {
-  padding: 40px;
-}
-
-.bloque-comunidad-faqs {
-  background-color: #515151;
-  background-image: url(../img/perro-gato-pet-sitters.jpg);
+.faqs {
   display: flex;
   justify-content: center;
   align-items: center;
-  resize: both;
-  overflow: auto;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: rgba(228, 228, 228, 0.3960784314);
+  flex-direction: column;
+  font-size: 1rem;
+  gap: 5em;
+  text-align: center;
+  padding: 4em;
+}
+.faqs__titulo {
+  color: #7acedd;
+  font-size: 2rem;
+  justify-self: center;
+  text-align: center;
+  padding: 2em 0em 0em 0em;
+}
+
+div article h3 {
+  color: #c288e4;
+  font-size: 1.5rem;
+}
+
+div article h4 {
+  color: #7acedd;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 1em;
+}
+
+.unite-comunidad-faqs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #ffffff;
+  font-size: 1rem;
+  height: 25em;
+  background-image: url(../img/pet-sitters-gato-en-cama-faqs-2.jpg);
   background-size: cover;
+  background-position: bottom;
   background-attachment: fixed;
-  min-width: none;
-  min-height: 600px;
+}
+@media (min-width: 1024px) {
+  .unite-comunidad-faqs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    height: 45em;
+    flex-direction: column;
+    text-align: center;
+    background-size: cover;
+    background-position: bottom;
+  }
 }
 
 .banner-ppal-contacto {
