@@ -51,134 +51,145 @@
 
     <main>
 
-        <div class="banner-ppal-contacto"></div>
+        <div class="contacto">
+            <div class="contacto__portada"></div>
 
-        <div>
-            <h2 class="titulo-dejanos-mensaje"> Dejanos tu mensaje</h2>
+            <div>
+                <h2 class="contacto__titulo"> Dejanos tu mensaje</h2>
+                <h3 class="contacto__texto">Si tenés alguna pregunta o te gustaría programar una visita de
+                    <strong>pet-sitting</strong> para tu mascota, no dudes en ponerte en contacto con nosotros. Puedes
+                    comunicarte a través de nuestro número de teléfono o correo electrónico, o simplemente completando
+                    el formulario de contacto:
+                </h3>
+            </div>
+
+            <section>
+                <form action="">
+                    <div class="contacto__formulario">
+                        <div class="nombre-apellido">
+                            <label for="nombre">Nombre y Apellido:</label>
+                            <input type="text" id="nombre" name="nombre">
+                        </div>
+
+                        <div class="genero">
+                            <span>Género:</span>
+                            <label for="mujer">Mujer</label>
+                            <input type="radio" id="mujer" name="genero" value="mujer">
+
+                            <label for="hombre">Hombre</label>
+                            <input type="radio" id="hombre" name="genero" value="hombre">
+
+                            <label for="otro-genero">Otro</label>
+                            <select name="otro-genero" id="otro-genero">
+                                <option value="ninguno">Ninguno</option>
+                                <option value="trans-femenino">Trans femenino</option>
+                                <option value="trans-masculino">Trans masculino</option>
+                                <option value="intersex">Intersex</option>
+                                <option value="intersexual">Intersexual</option>
+                                <option value="androginx">Androginx</option>
+                                <option value="androgina">Andrógina</option>
+                                <option value="androgino">Andrógino</option>
+                                <option value="otro">Otro</option>
+                            </select>
+
+                            <label for="sin-especificar">Prefiero no decirlo</label>
+                            <input type="radio" id="sin-especificar" name="sin-especificar" value="sin-especificar">
+                        </div>
+
+                        <div class="telefono">
+                            <label for="tel">Teléfono:</label>
+                            <input type="tel" id="tel" name="tel">
+                        </div>
+
+                        <div class="email">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+
+                        <div class="cantidad-mascotas">
+                            <label for="cantidad de mascotas">Cantidad de mascotas:</label>
+                            <input type="number" id="cantidad de mascotas" name="cantidad de mascotas">
+                        </div>
+
+                        <div class="nombre-mascota">
+                            <label for="nombre mascota">Nombre/s de la/s mascota/s:</label>
+                            <input type="text" id="nombre mascota" name="nombre mascota">
+                        </div>
+
+                        <div class="tipo-animal">
+                            <label for="perro">Perro</label>
+                            <input type="checkbox" id="perro" name="tipo-animal" value="perro">
+
+                            <label for="gato">Gato</label>
+                            <input type="checkbox" id="gato" name="tipo-animal" value="gato">
+
+                            <label for="pez">Pez</label>
+                            <input type="checkbox" id="pez" name="tipo-animal" value="pez">
+
+                            <label for="tortuga">Tortuga</label>
+                            <input type="checkbox" id="tortuga" name="tipo-animal" value="tortuga">
+
+                            <label for="conejo">Conejo</label>
+                            <input type="checkbox" id="conejo" name="tipo-animal" value="conejo">
+                            <div>
+                                <label for="otro-animal">Otro</label>
+                                <div>
+                                <input type="text" id="otro-animal" name="tipo-animal" value="">
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="asunto">
+                            <label for="asunto">Asunto del mensaje:</label>
+                            <select name="asunto" id="asunto">
+                                <option value="consulta">Consulta</option>
+                                <option value="precios">Precios</option>
+                                <option value="consejo">Consejo</option>
+                                <option value="reclamo">Reclamo</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="mensaje">Mensaje:</label>
+                        </div>
+
+                        <div class="mensaje">
+                            <textarea name="mensaje" id="mensaje" cols="20" rows="15"></textarea>
+                        </div>
+
+                        <div class="suscribirse">
+                            <label for="noticias">¿Desea suscribirse al newletter para recibir información adicional por
+                                mail?</label>
+                            <input type="checkbox" id="noticias" name="noticias" value="Acepto">
+                        </div>
+
+                        <div class="botones-contacto">
+                            <input type="submit" value="Enviar">
+                            <input type="reset" value="Limpiar">
+                        </div>
+
+                    </div>
+                </form>
+            </section>
+
         </div>
-
-        <section class="contacto-formulario">
-            <form action="">
-                <div class="nombre-apellido">
-                    <label for="nombre">Nombre y Apellido:</label>
-                    <input type="text" id="nombre" name="nombre">
-                </div>
-
-                <div class="genero">
-                    <span>Género:</span>
-                    <label for="mujer">Mujer</label>
-                    <input type="radio" id="mujer" name="genero" value="mujer">
-
-                    <label for="hombre">Hombre</label>
-                    <input type="radio" id="hombre" name="genero" value="hombre">
-
-                    <label for="otro-genero">Otro</label>
-                    <select name="otro-genero" id="otro-genero">
-                        <option value="ninguno">Ninguno</option>
-                        <option value="trans-femenino">Trans femenino</option>
-                        <option value="trans-masculino">Trans masculino</option>
-                        <option value="intersex">Intersex</option>
-                        <option value="intersexual">Intersexual</option>
-                        <option value="androginx">Androginx</option>
-                        <option value="androgina">Andrógina</option>
-                        <option value="androgino">Andrógino</option>
-                        <option value="otro">Otro</option>
-                    </select>
-
-                    <label for="sin-especificar">Prefiero no decirlo</label>
-                    <input type="radio" id="sin-especificar" name="sin-especificar" value="sin-especificar">
-                </div>
-
-                <div class="telefono">
-                    <label for="tel">Teléfono:</label>
-                    <input type="tel" id="tel" name="tel">
-                </div>
-
-                <div class="email">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email">
-                </div>
-
-                <div class="cantidad-mascotas">
-                    <label for="cantidad de mascotas">Cantidad de mascotas:</label>
-                    <input type="number" id="cantidad de mascotas" name="cantidad de mascotas">
-                </div>
-
-                <div class="nombre-mascota">
-                    <label for="nombre mascota">Nombre/s de la/s mascota/s:</label>
-                    <input type="text" id="nombre mascota" name="nombre mascota">
-                </div>
-
-                <div class="tipo-animal">
-                    <h3>Tipo de animal:</h3>
-                    <label for="perro">Perro</label>
-                    <input type="checkbox" id="perro" name="tipo-animal" value="perro">
-
-                    <label for="gato">Gato</label>
-                    <input type="checkbox" id="gato" name="tipo-animal" value="gato">
-
-                    <label for="pez">Pez</label>
-                    <input type="checkbox" id="pez" name="tipo-animal" value="pez">
-
-                    <label for="tortuga">Tortuga</label>
-                    <input type="checkbox" id="tortuga" name="tipo-animal" value="tortuga">
-
-                    <label for="conejo">Conejo</label>
-                    <input type="checkbox" id="conejo" name="tipo-animal" value="conejo">
-
-                    <label for="otro-animal">Otro</label>
-                    <input type="text" id="otro-animal" name="tipo-animal" value="">
-                </div>
-
-                <div class="asunto">
-                    <label for="asunto">Asunto del mensaje:</label>
-                    <select name="asunto" id="asunto">
-                        <option value="consulta">Consulta</option>
-                        <option value="precios">Precios</option>
-                        <option value="consejo">Consejo</option>
-                        <option value="reclamo">Reclamo</option>
-                        <option value="otro">Otro</option>
-                    </select>
-                </div>
-
-                <div class="mensaje">
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea name="mensaje" id="mensaje" cols="60" rows="15"></textarea>
-                </div>
-
-                <div class="suscribirse">
-                    <label for="noticias">¿Desea suscribirse al newletter para recibir información adicional por
-                        mail?</label>
-                    <input type="checkbox" id="noticias" name="noticias" value="Acepto">
-                </div>
-
-                <div class="botones-contacto">
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Limpiar">
-                </div>
-
-            </form>
-        </section>
-
-        <section class="bloque-imagen-contacto">
-            <h2 class="btn-comunidad-faqs">Unite a la comunidad</h2>
-        </section>
 
 
     </main>
 
     <footer class="footer">
-        <div class="menu-footer">
+        <div class="footer__menu">
             <ul>
-                <li> <a href="../index.html">Inicio</a></li>
-                <li> <a href="./nosotros.html">Nosotros</a></li>
-                <li> <a href="./servicios.html">Servicios</a></li>
-                <li> <a href="./preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
-                <li> <a href="./contacto.html">Contacto</a></li>
+                <li> <a href="./index.html">Inicio</a></li>
+                <li> <a href="./pages/nosotros.html">Nosotros</a></li>
+                <li> <a href="./pages/servicios.html">Servicios</a></li>
+                <li> <a href="./pages/preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
+                <li> <a href="./pages/contacto.html">Contacto</a></li>
             </ul>
         </div>
 
-        <div class="mas-info">
+        <div class="footer__mas-info">
             <ul>
                 <li>Políticas</li>
                 <li>Métodos de pago</li>
@@ -186,7 +197,7 @@
             </ul>
         </div>
 
-        <div class="num-contact-mail">
+        <div class="footer__num-contacto">
             <ul>
                 <li>Tel. Fijo</li>
                 <li>WhatsApp</li>
@@ -194,7 +205,7 @@
             </ul>
         </div>
 
-        <div class="redes">
+        <div class="footer__redes">
             <span class="ico-facebook"><i class="bi bi-facebook"></i></span>
             <span class="ico-instagram"><i class="bi bi-instagram"></i></span>
             <span class="ico-tik-tok"><i class="bi bi-tiktok"></i> </span>

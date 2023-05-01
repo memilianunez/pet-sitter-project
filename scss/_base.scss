@@ -32,7 +32,7 @@ $color-fondo-tarjeta-hover:#c982f573;
 $color-fondo-footer:#f2f1f19a;
 $color-fondo-footer-redes:#f0eeee;
 
-
+$color-fondo-formulario: #a68cf548; 
 
 $MQ-mobile: 320px;
 
@@ -95,6 +95,21 @@ a{
     text-decoration: none;
     color: $color-primario;
 }
+
+input {
+    color: inherit;
+    font-family: inherit;
+}
+
+textarea {
+    color: $color-primario;
+    font-family: $fuente-principal;
+}
+
+
+
+
+
 
 @mixin flex-center {
     display: flex;

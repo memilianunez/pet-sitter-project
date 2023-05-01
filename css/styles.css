@@ -52,6 +52,16 @@ a {
   color: #515151;
 }
 
+input {
+  color: inherit;
+  font-family: inherit;
+}
+
+textarea {
+  color: #515151;
+  font-family: "Poppins", sans-serif;
+}
+
 .block, .equipo__btn {
   display: flex;
   flex-direction: column;
@@ -83,39 +93,6 @@ a {
   background-color: aqua;
   color: #00b4d8;
   border: solid 0.2em #00b4d8;
-}
-
-@media (min-width: 1024px) {
-  .block, .equipo__btn {
-    font-size: 1rem;
-    padding: 1em;
-  }
-  .btn-equipo {
-    display: flex;
-  }
-}
-.btn-comunidad-servicios {
-  background-color: #ffffff;
-  font-weight: 600;
-  color: #515151;
-  padding: 20px 40px;
-  border: solid rgba(0, 0, 0, 0.247);
-  border-radius: 10px;
-}
-
-.btn-comunidad-faqs {
-  background-color: #ffffff;
-  height: 40px;
-  font-weight: 600;
-  color: #515151;
-  padding: 20px 40px;
-  border: solid rgba(0, 0, 0, 0.247);
-  border-radius: 10px;
-}
-
-.btn-comunidad-faqs:hover {
-  background-color: rgba(81, 81, 81, 0.9176470588);
-  color: #ffffff;
 }
 
 .titulo-ppal {
@@ -807,7 +784,7 @@ nav ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.8rem;
+  font-size: 2rem;
   padding: 0.5em;
 }
 @media (min-width: 1024px) {
@@ -960,13 +937,14 @@ nav ul li a {
   gap: 5em;
   text-align: center;
   padding: 4em;
+  padding-top: 1em;
 }
 .faqs__titulo {
   color: #7acedd;
   font-size: 2rem;
   justify-self: center;
   text-align: center;
-  padding: 2em 0em 0em 0em;
+  padding: 1em 0em 0em 0em;
 }
 @media (min-width: 1024px) {
   .faqs {
@@ -1023,204 +1001,192 @@ div article h4 {
   }
 }
 
-.banner-ppal-contacto {
-  background-color: #515151;
-  background-image: url(../img/gatito-cama-pet-sitters.jpg);
-  resize: both;
-  overflow: auto;
-  background-repeat: no-repeat;
-  background-position: center;
+.contacto {
+  font-size: 1rem;
+  padding-bottom: 5em;
+}
+.contacto__portada {
+  background-image: url(../img/pet-sitters-contacto-portada-2.jpg);
+  height: 60vh;
   background-size: cover;
-  background-attachment: scroll;
-  min-width: none;
-  min-height: 600px;
-}
-
-.contacto-formulario {
-  padding: 70px;
-}
-
-.titulo-dejanos-mensaje {
-  color: #79CACC;
-  text-decoration: underline;
-  font-weight: 700;
-  display: flex;
-  justify-content: center;
-  padding: 50px;
-}
-
-.nombre-apellido {
-  padding: 20px;
-}
-
-.genero {
-  padding: 20px;
-}
-
-.telefono {
-  padding: 20px;
-}
-
-.email {
-  padding: 20px;
-}
-
-.cantidad-mascotas {
-  padding: 20px;
-}
-
-.nombre-mascota {
-  padding: 20px;
-}
-
-.tipo-animal {
-  padding: 20px;
-}
-
-.asunto {
-  padding: 20px;
-}
-
-.mensaje {
-  padding: 20px;
-}
-
-.suscribirse {
-  padding: 20px;
-}
-
-.botones-contacto {
-  padding: 20px;
-}
-
-form {
-  color: #515151;
-  font-family: "Poppins", sans-serif;
-}
-
-input {
-  color: inherit;
-  font-family: inherit;
-}
-
-textarea {
-  color: #515151;
-  font-family: "Poppins", sans-serif;
-}
-
-.bloque-imagen-contacto {
-  background-image: url("../img/perro-gato-sentados-pet-sitters.jpg");
-  background-position: center;
-  background-size: cover;
-  background-color: #767676;
-  height: 600px;
-  background-repeat: no-repeat;
+  background-position: top;
   background-attachment: fixed;
-  resize: both;
+  background-position: center;
+}
+.contacto__titulo {
+  justify-content: center;
+  justify-self: center;
+  text-align: center;
+  font-size: 2rem;
+  padding: 1em 0em 0em 1em;
+}
+@media (min-width: 658px) and (max-width: 1023px) {
+  .contacto__titulo {
+    color: #7acedd;
+    font-size: 2rem;
+    justify-content: center;
+    justify-self: center;
+    text-align: center;
+    padding: 1em 0em 0em 1em;
+  }
+}
+@media (min-width: 1024px) {
+  .contacto__titulo {
+    color: #7acedd;
+    font-size: 2rem;
+    justify-content: center;
+    justify-self: center;
+    text-align: center;
+    padding: 1em 0em 0em 1em;
+  }
+}
+.contacto__texto {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 1em 2em 2em 2em;
+  text-align: center;
+}
+@media (min-width: 658px) and (max-width: 1023px) {
+  .contacto__texto {
+    font-size: 1rem;
+    padding: 2em 2em 0em 2em;
+  }
+}
+@media (min-width: 1024px) {
+  .contacto__texto {
+    font-size: 1.2rem;
+    padding: 2em 8em 2em 8em;
+  }
+}
+.contacto__formulario {
+  background-color: rgba(166, 140, 245, 0.2823529412);
+  color: #515151;
+  border: solid 0.2em #8003c8;
+  border-radius: 2em;
+  gap: 2em;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   justify-content: center;
+  font-size: 1rem;
+  padding: 2em;
+  margin: 1em 2em 0em 2em;
+}
+@media (min-width: 658px) and (max-width: 1023px) {
+  .contacto__formulario {
+    font-size: 1rem;
+    margin: 7em;
+    border-radius: 2em;
+    gap: 1.5em;
+  }
+}
+@media (min-width: 1024px) {
+  .contacto__formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    font-size: 1rem;
+    margin: 0px 200px 50px 200px;
+    padding: 3em 3em 3em 3em;
+    border-radius: 2em;
+    gap: 1.5em;
+  }
 }
 
-.banner-ppal-contacto {
-  background-color: #515151;
-  background-image: url(../img/gatito-cama-pet-sitters.jpg);
-  resize: both;
-  overflow: auto;
-  background-repeat: no-repeat;
-  background-position: center;
+.contacto {
+  font-size: 1rem;
+  padding-bottom: 5em;
+}
+.contacto__portada {
+  background-image: url(../img/pet-sitters-contacto-portada-2.jpg);
+  height: 60vh;
   background-size: cover;
-  background-attachment: scroll;
-  min-width: none;
-  min-height: 600px;
-}
-
-.contacto-formulario {
-  padding: 70px;
-}
-
-.titulo-dejanos-mensaje {
-  color: #79CACC;
-  text-decoration: underline;
-  font-weight: 700;
-  display: flex;
-  justify-content: center;
-  padding: 50px;
-}
-
-.nombre-apellido {
-  padding: 20px;
-}
-
-.genero {
-  padding: 20px;
-}
-
-.telefono {
-  padding: 20px;
-}
-
-.email {
-  padding: 20px;
-}
-
-.cantidad-mascotas {
-  padding: 20px;
-}
-
-.nombre-mascota {
-  padding: 20px;
-}
-
-.tipo-animal {
-  padding: 20px;
-}
-
-.asunto {
-  padding: 20px;
-}
-
-.mensaje {
-  padding: 20px;
-}
-
-.suscribirse {
-  padding: 20px;
-}
-
-.botones-contacto {
-  padding: 20px;
-}
-
-form {
-  color: #515151;
-  font-family: "Poppins", sans-serif;
-}
-
-input {
-  color: inherit;
-  font-family: inherit;
-}
-
-textarea {
-  color: #515151;
-  font-family: "Poppins", sans-serif;
-}
-
-.bloque-imagen-contacto {
-  background-image: url("../img/perro-gato-sentados-pet-sitters.jpg");
-  background-position: center;
-  background-size: cover;
-  background-color: #767676;
-  height: 600px;
-  background-repeat: no-repeat;
+  background-position: top;
   background-attachment: fixed;
-  resize: both;
+  background-position: center;
+}
+.contacto__titulo {
+  justify-content: center;
+  justify-self: center;
+  text-align: center;
+  font-size: 2rem;
+  padding: 1em 0em 0em 1em;
+}
+@media (min-width: 658px) and (max-width: 1023px) {
+  .contacto__titulo {
+    color: #7acedd;
+    font-size: 2rem;
+    justify-content: center;
+    justify-self: center;
+    text-align: center;
+    padding: 1em 0em 0em 1em;
+  }
+}
+@media (min-width: 1024px) {
+  .contacto__titulo {
+    color: #7acedd;
+    font-size: 2rem;
+    justify-content: center;
+    justify-self: center;
+    text-align: center;
+    padding: 1em 0em 0em 1em;
+  }
+}
+.contacto__texto {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 1em 2em 2em 2em;
+  text-align: center;
+}
+@media (min-width: 658px) and (max-width: 1023px) {
+  .contacto__texto {
+    font-size: 1rem;
+    padding: 2em 2em 0em 2em;
+  }
+}
+@media (min-width: 1024px) {
+  .contacto__texto {
+    font-size: 1.2rem;
+    padding: 2em 8em 2em 8em;
+  }
+}
+.contacto__formulario {
+  background-color: rgba(166, 140, 245, 0.2823529412);
+  color: #515151;
+  border: solid 0.2em #8003c8;
+  border-radius: 2em;
+  gap: 2em;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   justify-content: center;
+  font-size: 1rem;
+  padding: 2em;
+  margin: 1em 2em 0em 2em;
+}
+@media (min-width: 658px) and (max-width: 1023px) {
+  .contacto__formulario {
+    font-size: 1rem;
+    margin: 7em;
+    border-radius: 2em;
+    gap: 1.5em;
+  }
+}
+@media (min-width: 1024px) {
+  .contacto__formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    font-size: 1rem;
+    margin: 0px 200px 50px 200px;
+    padding: 3em 3em 3em 3em;
+    border-radius: 2em;
+    gap: 1.5em;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

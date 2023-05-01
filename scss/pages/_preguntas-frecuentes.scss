@@ -6,16 +6,15 @@
     gap: 5em;
     text-align: center;
     padding: 4em;
-
+    padding-top: 1em;
 
     &__titulo {
         color: $color-terciario;
         font-size: 2rem;
         justify-self: center;
         text-align: center;
-        padding: 2em 0em 0em 0em;
+        padding: 1em 0em 0em 0em;
     }
-
 
 @include desktop{
     text-align: left;
@@ -27,17 +26,11 @@
     }
 }
 
-
 }
-
-
-
 
 div article h3 {
     color: $color-secundario;
     font-size: 1.5rem;
-
-    
 }
 
 div article h4{
@@ -49,7 +42,6 @@ div article h4{
     @include desktop{
         padding: 0;
     }
-
 }
 
 .unite-comunidad-faqs {

@@ -1,3 +1,5 @@
+
+//--INDEX--//
 .block {
     display: flex;
     flex-direction: column;
@@ -40,7 +42,7 @@
 
 
 
-//----Seccion Nosotros - Equipo---//
+//----NOSOTROS-EQUIPO---//
 .equipo__btn {
     @extend .block;
 }
@@ -50,57 +52,3 @@
 
 }
 
-
-
-
-
-
-//--DESKTOP--//
-@media (min-width: 1024px) {
-
-    .block {
-        font-size: 1rem;
-        padding: 1em;
-    }
-
-
-
-    .btn-equipo {
-        display: flex;
-
-    }
-
-}
-
-
-
-//---SERVICIOS--//
-
-
-.btn-comunidad-servicios {
-    background-color: #ffffff;
-    font-weight: 600;
-    color: #515151;
-    padding: 20px 40px;
-    border: solid rgba(0, 0, 0, 0.247);
-    border-radius: 10px;
-}
-
-
-
-//---PREGUNTAS FRECUENTES --// 
-
-.btn-comunidad-faqs {
-    background-color: #ffffff;
-    height: 40px;
-    font-weight: 600;
-    color: #515151;
-    padding: 20px 40px;
-    border: solid rgba(0, 0, 0, 0.247);
-    border-radius: 10px;
-}
-
-.btn-comunidad-faqs:hover {
-    background-color: #515151ea;
-    color: #ffffff;
-}
