@@ -16,11 +16,28 @@
         padding: 2em 0em 0em 0em;
     }
 
+
+@include desktop{
+    text-align: left;
 }
+
+&__pregunta{
+    @include desktop{
+        text-align: left;
+    }
+}
+
+
+}
+
+
+
 
 div article h3 {
     color: $color-secundario;
     font-size: 1.5rem;
+
+    
 }
 
 div article h4{
@@ -28,6 +45,11 @@ div article h4{
     font-size: 1.2rem;
     font-weight: 700;
     padding: 1em;
+
+    @include desktop{
+        padding: 0;
+    }
+
 }
 
 .unite-comunidad-faqs {
