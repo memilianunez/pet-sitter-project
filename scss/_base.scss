@@ -12,20 +12,23 @@ $color-nav: #f0eeee;
 $color-bloques-secciones:#e4e4e465;
 
 
-$color-btn-text: #8003c8;
-$color-btn-border: #8003c8;
-$color-fondo-btn: #ba51fbea;
+$color-btn-text: #c288e4;
+$color-btn-border: #c288e4;
+$color-fondo-btn: #a68cf548;;
 
 
 $color-btn-text-hover: #00b4d8;
 $color-btn-border-hover: #00b4d8;
 $color-fondo-btn-hover: #90e0ef;
 
+$color-fondo-btn-menu: #a68cf548; 
+
+
 $color-header: #e4e4e4;
 
-$color-texto-tarjeta: #80509d;
+$color-texto-tarjeta: #9762b6;
 $color-fondo-tarjeta: #d2a2ee68;
-$color-borde-tarjeta: #730a8d9b;
+$color-borde-tarjeta: #c288e4;
 $color-fondo-tarjeta-hover:#c982f573;
 
 
@@ -33,7 +36,6 @@ $color-fondo-footer:#f2f1f19a;
 $color-fondo-footer-redes:#f0eeee;
 
 $color-fondo-formulario: #a68cf548; 
-
 
 
 
@@ -93,6 +95,13 @@ a{
     text-decoration: none;
     color: $color-primario;
 }
+
+i{
+    font-size: 1rem;
+    padding: 0.5em;
+    height: 200px;
+}
+
 
 input {
     color: inherit;

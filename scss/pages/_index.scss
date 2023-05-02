@@ -4,7 +4,6 @@
     background-image: url(../img/pet-sitter-mimo.jpg);
     background-size: cover;
     background-position: center;
-    
 }
 
 .tu-tranquilidad {
@@ -68,6 +67,7 @@
     &__titulo {
         font-size: 2rem;
         text-align: center;
+        font-weight: 400;
 
         @include tablet {
             font-size: 2.5em;

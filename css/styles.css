@@ -52,6 +52,12 @@ a {
   color: #515151;
 }
 
+i {
+  font-size: 1rem;
+  padding: 0.5em;
+  height: 200px;
+}
+
 input {
   color: inherit;
   font-family: inherit;
@@ -70,9 +76,9 @@ textarea {
   padding: 2em;
 }
 .block__btn, .btn-conocer-mas-nosotros, .btn-unirme, .tu-tranquilidad__btn {
-  background-color: rgba(186, 81, 251, 0.9176470588);
-  color: #8003c8;
-  border: solid 0.2em #8003c8;
+  background-color: rgba(166, 140, 245, 0.2823529412);
+  color: #c288e4;
+  border: solid 0.2em #c288e4;
   font-weight: 600;
   border-radius: 2em;
   font-size: 1rem;
@@ -90,9 +96,27 @@ textarea {
 .btn-unirme {
   font-size: 1rem;
   margin: 1em;
-  background-color: rgba(186, 81, 251, 0.9176470588);
+  background-color: #c288e4;
+  color: #ffffff;
+  border: solid 0.2em #c288e4;
+}
+
+.btn-sesion {
+  font-size: 1em;
+  background-color: rgba(166, 140, 245, 0.2823529412);
+  font-size: 1rem;
+  padding: 0.6em 1em 0.6em 1em;
+  border: 3px solid #c288e4;
+  border-radius: 2em;
+  color: #c288e4;
+  font-weight: 600;
+}
+
+.btn-sesion:hover {
+  background-color: #90e0ef;
   color: #00b4d8;
-  border: solid 0.2em #00b4d8;
+  font-weight: 600;
+  border: 3px solid #00b4d8;
 }
 
 .titulo-ppal {
@@ -141,7 +165,7 @@ textarea {
   align-items: center;
   flex-direction: column;
   background-color: rgba(210, 162, 238, 0.4078431373);
-  border: 0.2em solid rgba(115, 10, 141, 0.6078431373);
+  border: 0.2em solid #c288e4;
   font-size: 1rem;
   padding: 0.5em;
   border-radius: 2em;
@@ -164,11 +188,11 @@ textarea {
 .pasos__icono {
   font-size: 2.2rem;
   padding: 0.3em;
-  color: #80509d;
+  color: #9762b6;
 }
 .pasos__titulo {
   font-size: 1.3em;
-  color: #80509d;
+  color: #9762b6;
   font-size: 1.2rem;
   font-weight: 700;
   display: flex;
@@ -246,8 +270,8 @@ textarea {
 }
 .servicios__tarjeta {
   background-color: rgba(210, 162, 238, 0.4078431373);
-  border: 0.2em solid rgba(115, 10, 141, 0.6078431373);
-  border: 0.2em solid rgba(115, 10, 141, 0.6078431373);
+  border: 0.2em solid #c288e4;
+  border: 0.2em solid #c288e4;
   border-radius: 25px;
   font-size: 1rem;
   font-weight: 700;
@@ -274,10 +298,10 @@ textarea {
 .servicios__icono {
   font-size: 2.2rem;
   padding: 0.3em;
-  color: #80509d;
+  color: #9762b6;
 }
 .servicios__tarjeta-titulo {
-  color: #80509d;
+  color: #9762b6;
   font-size: 1.1rem;
   display: flex;
   flex-direction: column;
@@ -423,6 +447,51 @@ textarea {
   color: rgba(201, 130, 245, 0.4509803922);
 }
 
+@media (min-width: 1024px) {
+  .menu-desplegable-mobile {
+    display: none;
+  }
+}
+
+.nav-item {
+  align-self: flex-start;
+  font-size: 1rem;
+  padding-left: 5em;
+}
+
+.nav-link {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.inicio-registrarme {
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  padding-top: 10em;
+  padding-left: 0.6em;
+  gap: 2em;
+}
+
+.registrarme {
+  font-size: 1em;
+  padding: 0.8em 1em 0.8em 1em;
+}
+
+.menu-desktop {
+  display: none;
+}
+@media (min-width: 658px) and (max-width: 1023px) {
+  .menu-desktop {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  .menu-desktop {
+    display: block;
+  }
+}
+
 .contenedor-header {
   background-color: #ffffff;
   padding: 1em;
@@ -437,7 +506,8 @@ textarea {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
+  font-size: 1rem;
+  padding: 0.8em;
 }
 
 .logo-pet-sitters {
@@ -456,42 +526,7 @@ textarea {
   background-color: #ffffff;
 }
 
-@media (min-width: 658px) and (max-width: 1023px) {
-  /* ----header---- */
-  .header {
-    background-color: #e4e4e4;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .contenedor-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  .icono-menu-mobile {
-    display: none;
-  }
-  .contenedor-inicio-reg {
-    background-color: #ffffff;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    font-size: 1rem;
-    padding-right: 4em;
-    gap: 1em;
-    grid-row: 1/2;
-    grid-column: 2/3;
-  }
-  .btn-sesion {
-    background-color: rgb(215, 215, 215);
-    border: 1px solid black;
-    border-radius: 20px;
-    padding: 6px 10px;
-    font-weight: 600;
-  }
-}
 @media (min-width: 1024px) {
-  /* ----header---- */
   .header {
     background-color: #e4e4e4;
     display: grid;
@@ -502,13 +537,14 @@ textarea {
     display: none;
   }
   .btn-sesion {
-    background-color: rgb(215, 215, 215);
-    font-weight: 600;
-    min-width: 130px;
-    flex-wrap: nowrap;
-    border: 1px solid black;
-    border-radius: 20px;
-    padding: 6px 10px;
+    font-size: 1em;
+    background-color: rgba(166, 140, 245, 0.2823529412);
+    font-size: 1rem;
+    padding: 0.8em 1em 0.8em 1em;
+    border-radius: 2em;
+  }
+  .btn-sesion:hover {
+    background-color: #90e0ef;
   }
   .contenedor-inicio-reg {
     background-color: #ffffff;
@@ -520,6 +556,16 @@ textarea {
   .registrarme {
     font-size: 1rem;
     padding-right: 4em;
+  }
+}
+@media (min-width: 1024px) {
+  .nav-list {
+    padding: 0;
+    margin: 0;
+  }
+  nav {
+    padding: 0;
+    margin: 0;
   }
 }
 nav ul {
@@ -644,6 +690,7 @@ nav ul li a {
 .tu-tranquilidad__titulo {
   font-size: 2rem;
   text-align: center;
+  font-weight: 400;
 }
 @media (min-width: 658px) and (max-width: 1023px) {
   .tu-tranquilidad__titulo {
@@ -841,7 +888,7 @@ nav ul li a {
   padding: 2em 0em 0em 0em;
 }
 .equipo__nombres {
-  color: rgba(186, 81, 251, 0.9176470588);
+  color: #c288e4;
   font-size: 1.5rem;
   padding: 1em 0em 0em 0em;
 }
@@ -872,9 +919,9 @@ nav ul li a {
   font-size: 1rem;
   height: 30em;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   text-align: center;
   background-size: cover;
   background-position: center;
@@ -970,7 +1017,7 @@ nav ul li a {
   font-size: 2rem;
   justify-self: center;
   text-align: center;
-  padding: 1em 0em 0em 0em;
+  padding: 4em 0em 0em 0em;
 }
 @media (min-width: 1024px) {
   .faqs {
@@ -1088,7 +1135,7 @@ div article h4 {
 .contacto__formulario {
   background-color: rgba(166, 140, 245, 0.2823529412);
   color: #515151;
-  border: solid 0.2em #8003c8;
+  border: solid 0.2em #c288e4;
   border-radius: 2em;
   gap: 2em;
   display: flex;
@@ -1221,7 +1268,7 @@ div article h4 {
 .contacto__formulario {
   background-color: rgba(166, 140, 245, 0.2823529412);
   color: #515151;
-  border: solid 0.2em #8003c8;
+  border: solid 0.2em #c288e4;
   border-radius: 2em;
   gap: 2em;
   display: flex;

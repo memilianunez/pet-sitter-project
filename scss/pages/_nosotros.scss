@@ -118,7 +118,7 @@
     }
 
     &__nombres {
-        color: $color-fondo-btn;
+        color: $color-secundario;
         font-size: 1.5rem;
         padding: 1em 0em 0em 0em;
     }
@@ -149,13 +149,13 @@
 
 .unite-comunidad-nosotros {
     background-image: url(../img/patitas-perro-cama-pet-sitters.jpg);
-    background-color: #515151;
+    background-color: $color-primario;
     font-size: 1rem;
     height: 30em;
-    display: flex;
+
+    @include flex-center;
+
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
     background-size: cover;
     background-position: center;
@@ -165,6 +165,5 @@
         font-size: 1rem;
         margin: 5em 0em 0em 0em;
         height: 40em;
-
     }
 }

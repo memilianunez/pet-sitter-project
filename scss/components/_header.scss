@@ -1,3 +1,57 @@
+//--HEADER MOBILE Y TABLET--//
+
+.menu-desplegable-mobile {
+
+
+    @include desktop {
+        display: none;
+    }
+}
+
+.nav-item {
+    align-self: flex-start;
+    font-size: 1rem;
+    padding-left: 5em;
+}
+
+.nav-link{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+.inicio-registrarme {
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    padding-top: 10em;
+    padding-left: 0.6em;
+    gap: 2em;
+
+}
+
+
+
+.registrarme {
+    font-size: 1em;
+    padding: 0.8em 1em 0.8em 1em;
+}
+
+
+//--HEADER DESKTOP--//
+
+.menu-desktop {
+    display: none;
+
+    @include tablet {
+        display: none;
+    }
+
+    @include desktop {
+        display: block;
+    }
+}
+
 
 .contenedor-header {
     background-color: $color-blanco;
@@ -13,7 +67,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+    font-size: 1rem;
+    padding: 0.8em;
 }
 
 
@@ -35,76 +90,30 @@
     background-color: $color-blanco;
 }
 
-
-//--TABLET--//
-
-@media (min-width: 658px) and (max-width: 1023px) {
-
-    /* ----header---- */
-    .header {
-        background-color: $color-header;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .contenedor-header {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .icono-menu-mobile {
-        display: none;
-    }
-
-    .contenedor-inicio-reg {
-        background-color: $color-blanco;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        font-size: 1rem;
-        padding-right: 4em;
-        gap: 1em;
-        grid-row: 1/2;
-        grid-column: 2/3;
-    }
-
-    .btn-sesion {
-        background-color: rgb(215, 215, 215);
-        border: 1px solid black;
-        border-radius: 20px;
-        padding: 6px 10px;
-        font-weight: 600;
-    }
-
-}
-
-
-
-//--DESKTOP--//
 @media (min-width: 1024px) {
 
-    /* ----header---- */
     .header {
         background-color: #e4e4e4;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
 
-    
+
     .icono-menu-mobile {
         width: 50px;
         display: none;
     }
 
     .btn-sesion {
-        background-color: rgb(215, 215, 215);
-        font-weight: 600;
-        min-width: 130px;
-        flex-wrap: nowrap;
-        border: 1px solid black;
-        border-radius: 20px;
-        padding: 6px 10px;
+        font-size: 1em;
+        background-color: $color-fondo-btn-menu;
+        font-size: 1rem;
+        padding: 0.8em 1em 0.8em 1em;
+        border-radius: 2em;
+    }
+
+    .btn-sesion:hover{
+        background-color: $color-fondo-btn-hover;
     }
 
     .contenedor-inicio-reg {
@@ -120,4 +129,18 @@
         padding-right: 4em;
     }
 
+}
+
+
+@media (min-width: 1024px) {
+
+    .nav-list{
+        padding: 0;
+        margin: 0;
+    }
+
+    nav{
+        padding: 0;
+        margin: 0;
+    }
 }
