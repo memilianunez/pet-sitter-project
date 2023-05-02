@@ -70,7 +70,7 @@ textarea {
   padding: 2em;
 }
 .block__btn, .btn-conocer-mas-nosotros, .btn-unirme, .tu-tranquilidad__btn {
-  background-color: rgba(201, 130, 245, 0.8);
+  background-color: rgba(186, 81, 251, 0.9176470588);
   color: #8003c8;
   border: solid 0.2em #8003c8;
   font-weight: 600;
@@ -90,7 +90,7 @@ textarea {
 .btn-unirme {
   font-size: 1rem;
   margin: 1em;
-  background-color: rgba(201, 130, 245, 0.8);
+  background-color: rgba(186, 81, 251, 0.9176470588);
   color: #00b4d8;
   border: solid 0.2em #00b4d8;
 }
@@ -706,7 +706,7 @@ nav ul li a {
   }
 }
 .unite-comunidad__titulo {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   color: #ffffff;
   text-align: center;
 }
@@ -841,7 +841,7 @@ nav ul li a {
   padding: 2em 0em 0em 0em;
 }
 .equipo__nombres {
-  color: rgba(201, 130, 245, 0.8);
+  color: rgba(186, 81, 251, 0.9176470588);
   font-size: 1.5rem;
   padding: 1em 0em 0em 0em;
 }
@@ -938,7 +938,7 @@ nav ul li a {
   }
 }
 .servicios__bloque-pet-sitter__titulo {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #ffffff;
   text-align: center;
 }
