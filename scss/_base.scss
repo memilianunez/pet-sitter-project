@@ -53,7 +53,7 @@ body {
 h1 {
     color: $color-primario;
     font-family: $fuente-principal;
-    font-size: 10px;
+    font-size: 1rem;
     padding: 0px 20px;
     text-align: center;
     display: none;
@@ -62,20 +62,20 @@ h1 {
 h2 {
     color: $color-terciario;
     font-family: $fuente-principal;
-    font-size: 22px;
+    font-size: 1.2rem;
     font-weight: 800;
 }
 
 h3 {
     color: $color-primario;
     font-family: $fuente-principal;
-    font-size: 20px;
+    font-size: 1.3rem;
 }
 
 h4 {
     color: $color-secundario;
     font-family: $fuente-principal;
-    font-size: 18px;
+    font-size: 1.1rem;
     font-weight: 400;
 }
 
