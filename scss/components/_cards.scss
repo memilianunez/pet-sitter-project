@@ -159,7 +159,7 @@
         font-size: 1rem;
         font-weight: 700;
         width: 20em;
-        height: 18em;
+        height: 20em;
         padding: 1em 1em 0em 1em;
         margin: 10px;
 
@@ -173,9 +173,6 @@
         }
 
     }
-
-
-
 
     &__tarjeta:hover {
         background-color: $color-fondo-tarjeta-hover;
@@ -195,7 +192,5 @@
         justify-content: space-between;
         text-align: center;
     }
-
-
 
 }
