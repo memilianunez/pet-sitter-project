@@ -55,7 +55,8 @@ a {
 i {
   font-size: 1rem;
   padding: 0.5em;
-  height: 200px;
+  width: 1em;
+  height: 1em;
 }
 
 input {
@@ -186,8 +187,7 @@ textarea {
   background-color: rgba(201, 130, 245, 0.4509803922);
 }
 .pasos__icono {
-  font-size: 2.2rem;
-  padding: 0.3em;
+  padding: 0.5em;
   color: #9762b6;
 }
 .pasos__titulo {
